@@ -1,0 +1,215 @@
+---
+title: "An Algebra of Probability as Binary Logic"
+author: "Bill Foote"
+date: "`r Sys.Date()`"
+header-includes:
+   - \usepackage{polynom}
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Two schools of thought
+
+@coxprob describes two schools of probability. One is the frequency school which would sample events in ensembles indefinitely and across many universes. An ensemble is a combination of possible events. For example, the probability of extra-terrestrial life on one planet would require the counting of every possible combination of planetary existence in our universe and in any other universe as well. This would of course our universe is not a universe, nor are the other universes as well! Be that as it may, this notion of a long-run probability as a frequency requires, technically, an infinite amount of time across an infinite set of possible ensembles of events in a finite universe with finite time and space, let alone the annoying fact of a finite set of human observers with imperfect measurement technologies. The idea is thus a purely mental fabrication to aid comprehension of what is known to be incomplete (information about extra-terrestrial life), corruptible (measurement errors by human and their measurement technologies), and otherwise unimagined by humans who do not experience insight very often.
+
+On the other hand is the expectation school which thinks about probability as the logical consequence of how relatively likely one event or hypothesis is to another. In @Keynesprob view, the theory of probability is the logic of probable inference. Probability is a syllogistic relation from a hypothesis to data, and on to a conclusion. Each hypothesis is more or less plausible than another as measured by the ways in which data are consistent with a particular hypothesis. Plausibilities are bounded by extremes of impossibility and certainty, Aristotelian deductive logic is a special case of plausibility. This means we need more than binary true-false deduction to make statements about the plausibility of hypotheses in the face of data. We also no longer need the certainty uncomfortably afforded by leaps of imaginative extension of samplings into an infinity of possible combinations of hypotheses and events, namely the count of incidents. Instead we do need the count of ways in which data are consistent with a particular hypothesis. We now start from plausible numbers of ways consistent with data instead of infinite counts of instances of data.
+
+The expectation school's results build on an algebra of the logic of propositions. Here are tables of algebraic relationships among propositions. Once we establish these rules we can operate on any logical statement with the power of 9th grade elementary algebra. We need just three algebraic operations to work the algebra: AND, NOT, XOR. We need to add something else to our analysis: common sense. Just because the math might (and usually will) work out logically, does not mean we can interpret our results in a particular and realistic context. This is the problem of **existential import** which George Boole and symbolic logicians eschew. They would have us believe that the math is the math, without reference to anything real.
+
+In what follows we develop together an algebraic approach to studying inference introduced by George Boole and expanded upon by J.M. Keynes, E.T. Jaynes, and N.J. Wildberger. The logical system here relies on Aristotle's four fundamental logical forms as explained, for example by, P. Kreeft.
+
+## Rules
+
+Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
+
+\begin{array}{c | c c}
++ (XOR)   &  0    &  1 \\ \hline
+0         &  0    &  1 \\
+1         &  1    &  0 
+\end{array}
+
+Addition with boolean values $\{0,1\}$ is the same as that of the logical exclusive OR operations, XOR. Since each element equals its opposite, subtraction is thus the same operation as addition, so that $1-1=1+1=0$.
+
+The multiplication is multiplication modulo 2 (see the table below), and on boolean variables corresponds to the logical AND operation.
+
+\begin{array}{c | c c}
+x (AND)   &  0    &  1 \\ \hline
+0         &  0    &  0 \\
+1         &  0    &  1 
+\end{array}
+
+The NOT logic simply takes a 0 and flips it to 1, and if 1 flips it to zero.
+
+\begin{array}{c | c}
+\neg (NOT) x   &  1+x   \\ \hline
+0              &  1      \\
+1              &  0      
+\end{array}
+
+With these three operations we can evaluate any logical statement. 
+
+Here is a table of several useful expressions based on AND, XOR, and NOT. For any two propositions $x$ and $y$ whose values can only take on a 0 or 1, so that when $x=0$, we mean $x$ is false, otherwise (that is, $x=1) true.^[Boole has the negation of x as 1-x. We follow Wildberger's suggestion and use 1+x, given that all subtractions end up being addition in mod 2 arithmetic.]
+
+\begin{array}{c c | c c c c}
+x & y & xy & x+y & 1+x & y|x=1+x+xy \\ \hline
+0 & 0 & 0 & 0 & 1 & 1 \\
+0 & 1 & 0 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 & 0 & 0 \\
+1 & 1 & 1 & 0 & 0 & 1 \\ \hline
+x & y & x \land y & x \oplus y & \neg x & x \rightarrow y \\ \hline
+x & y &           & (x \lor y) \land \neg (x \land y) & \neg x \lor y &
+\end{array}
+
+The last row describes the algebraic operations in term of propositional logic as applied to boolean values of $\{0.1\}. We now study $y|x=1+x+xy$. 
+
+That last column does deserves immediate attention since it forms the foundation of conditional (reasonably expected) probability. Aristotle recorded four logical forms, two in the affirmative, two negative, two universal, two contingent. Medieval logicians called the two affirmative forms A and I for the first two vowels in _AffIrmo_, I affirm, and the two negative forms E and O from the Latin _nEgO_, I deny. Together they form the **Square of Opposition**. 
+
+Here S is the subject and P the predicate. Any subject S signifies what it is we are talking about, say, rain. Any predicate P signifies what the subject is about, say, falling to the ground. Equations and identities do not have a subject or a predicate and themselves might be the subject or predicate. But all propositions do have a subject and a predicate, just like in 3rd grade when we learned to write and speak in complete sentences, that is, in propositions, which contain a subject (usually a noun) and a predicate (usually a verb). We assume that when we apply the forms to concrete examples of propositions, the content of the form, that is, the S and the P, exist. For Thomas Aquinas signs are physical manifestations that allow us to understand something beyond their immediate appearance, like a footprint manifesting someone's presence or smoke manifesting fire. This something with an immediate appearance we will assume without further bother, that it somehow exists. Perhaps we append the particle _any_ to S and P to get any rain and any falling (of rain).
+
+In the table, _decisions_ is the subject S, what we are talking about, and _are rational_ is the predicate P, what the subject is about.
+
+\begin{array}{r | c | r | c }
+Form  & Proposition & Sentence & Algebra & Interpretation \\
+\hline
+A     & \text{All S is P}        & \text{"All decisions are rational."}         & a(1+b) = 0      \\ 
+E     & \text{No S is P}         & \text{"Not all decisions are rational."}     & ab = 0          \\
+I     & \text{Some S is P}       & \text{"Some decisions are rational."}        & ab \neq 0       \\
+O     & \text{Some S is not P}   & \text{"Some decisions are not rational."}    & a(1+b) \neq 0   \\
+\hline
+\end{array}
+
+In Form A "All decisions (a) are rational (b)." Logically $a$ and not $b$ is false (0), that is, algebraicly $a(1+b) = 0$. "Decisions" are not "rational" is false according to Form A. The obverse must be true, that "No decisions are not rational." We recall we are using "+" as exclusive OR, XOR with this algebraic rearrangement. Let's study this Form a bit more.
+
+\begin{array}{c| c l}
+statement & reason \\ 
+\hline
+1 & a(1+b) = 0     & \text{Form A definition}  \\
+2 & 1 + a(1+b) = 1 & \text{Symmetric property} \\
+3 & 1 + a + ab = 1 & \text{Distribution of multiplication over addition property} \\
+\hline
+4 & a \rightarrow b = b|a & \text{a gives some information to b} \\ 
+\hline
+\end{array}
+
+So-called "implication" means that a shares a's information with b. This is the primary meaning of "a conditions b", a|b.
+
+## Just Suppose
+
+We can suppose, for a minute or so, that there are three propositions A, B, and C. They have context in particular situations, for example, in decision making. In this context, we might suppose that A is the proposition "developers make reasonably successful decisions". We also suppose that B is the proposition "product management makes reasonably successful decisions." And now we put proposition C into context as "Teams use data and experience consistent with prevailing recommended practices". Other than observations made by teams ad something that neither the development manager nor the product management manager might yet any specific idea about, but does have at the very least an intuitive feel about something which has yet to be revealed. Of course, we need at some point to define a bit more precisely what is meant by "reasonably successful" and "consistent with prevailing recommended practices" all for another time and deep conversation.
+
+Let's put these pieces together and use the apparatus of our logical algebra to discover literally a new insight. To couch our analysis in terms of what we need, or wish for, in our analytical logic robot we require instructions for the robot must hold to these desiderata.^[E.T. Jaynes with an algebra of George Boole with insights from Norman J. Wildberger.]
+
+1. Plausibilities can be ordered as rational numbers. The so called irrational numbers such as the solution $x$ to the equation $y=x^2$, can be approximated to any degree of accuracy the robot can determine within the finite bounds of the robot's memory, ability to process, and share with those who use the robot as a tool of discovery.
+
+2. Whatever the robot helps us to infer must be subject to common sense in the real world of life and persons who use the robot as a tool.
+
+3. Whatever unobserved hypothesis which the robot helps us find is more plausible than another must be consistent with observed data.
+
+Now we can get to work.We ask "Is A and B true?" As managers of development and products we surely expect such a result. As usual there are two schools of thought on the matter.
+
+1. [Case 1] B is true given C, that is, the plausibility B|C. Having decided that B is true given C, decide that A is true, that is, the plausibility A|BC.
+
+2. [Case 2] A is true given C, that is, the plausibility A|C. Having decided that A is true given C, we, decide that B is true, that is, the plausibility B|AC.
+
+We will show that Case 1 is equivalent to Case 2 logically even though they each represent two seemingly different perspectives. Case 1 is the perspective of product managers who launch products for a living, while Case 2 is the perspective of developers who, well, develop products for a living. Those of use you attempt to manage developers and product managers would very much like to know that AB is true.
+
+Let's compute, with our robot's mechanisms, the joint proposition "A|BC and B|C". With our algebra of logic we have $x= A|BC$ and $y=B|C$ so that both-and amounts to multiplying $xy=(A|BC)(B|C)$. We also know through study of logical givenness, also known as implication, that for any propositions a and b $b|a = 1+a+ab$. Now we can calculate.
+
+For Case 1 we have this calculation.
+
+\begin{array}{c | r r | l}
+\hline
+1 &        & 1+BC+ABC                                & \text{definition of } A|BC \\
+2 & \times & 1+\,C+\,BC                              & \text{definition of } B|C \\ 
+\hline
+3 &        & \require{cancel} \cancel{BC}+\require{cancel} \cancel{BC}+\require{cancel} \cancel{ABC}    & \text{since } X^2=X \\
+4 &    +   & c+\require{cancel} \cancel{BC}+\require{cancel} \cancel{ABC}              & \text{ditto }   \\
+5 &    +   & 1+\require{cancel} \cancel{BC}+ABC                       & \text{ditto }   \\ 
+\hline
+6 &    =   & 1+C+ABC                                 & \text{since } X+X=0=\require{cancel} \cancel{X}+\require{cancel} \cancel{X} \\ 
+\hline 
+7 & \therefore & AB|C = (A|BC)(B|C)                  & \text{definition of } 1+C+ABC \\
+\hline
+\end{array}
+
+For Case 2 we have this calculation.
+
+\begin{array}{c | r r | l}
+\hline
+1 &        & 1+AC+ABC                                & \text{definition of } B|AC \\
+2 & \times & 1+\,C+\,AC                              & \text{definition of } A|C \\ \hline
+3 &        & \require{cancel} \cancel{AC}+\require{cancel} \cancel{AC}+\require{cancel} \cancel{ABC}    & \text{since } X^2=X \\
+4 &    +   & c+\require{cancel} \cancel{AC}+\require{cancel} \cancel{ABC}              & \text{ditto }   \\
+5 &    +   & 1+\require{cancel} \cancel{AC}+ABC                       & \text{ditto }   \\ \hline
+6 &    =   & 1+C+ABC                                 & \text{since } X+X=0=\require{cancel} \cancel{X}+\require{cancel} \cancel{X} \\ \hline 
+7 & \therefore & BA|C = (B|AC)(A|C)                  & \text{definition of } 1+C+ABC \\ \hline
+\end{array}
+
+Since BA=AB by the commutativity of the both-and operation we now also have shown that Case 1 is logically equivalent to Case 2. Here is the new knowledge, an insight, from all of these deductions.
+
+\begin{array}{c | r c | l}
+\hline
+1 &                &  AB|C = (A|BC)(B|C)         & \text{ Case 1 is true } \\
+2 & \text{and}     &  BA|C = (B|AC)(A|C)         & \text{ Case 2 is true } \\
+3 & \text{however} &  AB=BA                      & \text{commutativity of } AB \\
+4 & \text{so that} &  AB|C = BA|C                & \text{substitution of equals} \\    
+\hline
+5 & \therefore     &  (A|BC)(B|C) = (B|AC)(A|C)  & \text{transitivity of equality}\\
+  &                &                             & \text{if a=c, and b=d, and a=b, then c=d} \\
+\hline
+\end{array}
+
+We have just also unveiled the vaunted product rule of probability. We have but one more step to apply this rule to the work of our managers, namely make reasonable decisions. Here a decision will take the form of a hypothesis, that if true, will indicate a direction in which managers might reasonably act.
+
+## Torturing Data with Hypotheses
+
+So line 5 of our proof is true. By desiderata 1, we assign numbers to logical expressions. These numbers for our purposes will lie between 0 and 1 such that, for a mapping $P(x)$ of plausibility of the truth of a logical expression $x$ to the interval of rational numbers (and approximations of so-called irrational numbers) between 0 and 1 inclusive, we have for rational number $0< r \leq 1$
+
+$$
+P(x) = \begin{cases}
+			0, & \text{if } $x$ \text{ is false}\\
+      r, & \text{if } $x$ \text{ is true}
+		 \end{cases}
+$$
+
+Yes, we are optimistic, looking for the plausible truth value of a logical proposition.^[We could just as easily have picked $0 < r \leq 100$. As long as there is a strict ordering of pairs of numbers in the interval, a monotonic sequence, then we can generally use whatever interval we want.] Now it gets very serious since we now examine what exactly we will mean by reasonable, also known as rational.
+
+We let $H=A$ for our ordered list of hypotheses $H$, $D=B$ for our list of data $D$, $X=C$ for our list of instances of prior experience, previous choices and data $X$. With these substitutions we now have this expression.
+
+$$
+(H|DX)(D|X) = (D|HX)(H|X)
+$$
+Since the logical expressions in the parentheses are mapped to a plausibility index $P(x)$, we can use the normal rules of arithmetic and algebraic to divide both sides by $(D|X)$.
+
+$$
+\frac{(H|DX)(D|X)}{(D|X)} = \frac{(D|HX)(H|X)}{(D|X)}
+$$
+
+Since $(D|X)/(D|X) =1$ and anything times 1 is itself we arrive at our signal result with new notation $(x) = P(x)$.
+
+$$
+P(H|DX) = \frac{P(D|HX)P(H|X)}{P(D|X)}
+$$
+
+We can even calculate $(D|X)$ using some common sense and our logical algebra. First of all lets simple consider that X is true and calculate $P(D)$ by itself. Then we consider that $(D)$ will be a mixture of $(D|H)$ and $(D|\overline{H})$to account for all of the way D might occur. Thus 
+
+$$
+P(D) = P(D|H)P(H) + P(D|\overline{H})P(\overline{H}) 
+$$
+
+The algebra works out to simplifying the RHS of this expression all by remembering that 1+1=0 and x+x=0 in mod 2 arithmetic and algebra. We just need to show that the RHS = LHS.
+
+$$
+\begin{array}{r l}
+D &= (1+H+DH)H + (!+(1+H)+(1+H)D)(1+H) \\
+  &= H+H+DH+1+1+H+D+DH+H+H+H+DH+DH \\
+  &= D
+\end{array}
+$$
+
+We have a match. We have only now logically justified Bayes Rule. It would appear deductions can provide us with new knowledge and insights into our decisions and the data which consistently will help us guide our actions.
+
+Enough for now! We can now study any arrangement of events in logical order and map them to plausibility values. We need always remember that this approach requires at the outset a contextual matrix against which we analysts can interpret our results, examine their relevance, and inform the consumers of our analysis.
