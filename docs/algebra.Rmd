@@ -5,12 +5,43 @@ date: "`r Sys.Date()`"
 bibliography: algebra.bib
 header-includes:
    - \usepackage{polynom}
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Why this essay
+
+The end we seek here is to discover a principled way to determine the validity, coherence, and plausibility of our statements. Our work takes the form of an argument which is just a sequence of statements with premises which offer a theory of the argument and also data to fit to the theory. Premises and data lead to a conclusion which essentially is all about the fit of data to the theory. We will work with basic algebra and arithmetic applied to natural language statements. But in effect, the premises, data, conclusions and the process itself of the argument must make practical sense to the arguer. We will call this requirement a canon of common sense. Theories are usually in some sort of conditional form, if-this, then-that. Observed (or at least stated as so) data relate to terms in the theory. The structure of the argument then infers a conclusion. Any statement here is either true or false. We will assign a 1 if true and a 0 if false to quantify our arguments in the binary integer field.
+
+Why do we need a principled way to determine the validity of sequences of our statements? We will maintain a hypothesis we might call a canon of rationality. This canon will hold throughout all of our proceedings here. In a nutshell we will place the practice and science of logic in the only context we know, namely, ourselves. We are not machines or animals or plants or rocks, although we have aspects and attributes of each. We do however ask questions, rocks, plants, animals, machines (not even Artificial Intelligence) raises questions from experience, understanding, judgment, and decision. Yes, some machines may, if we switch them on, may have been programmed by a human to prompt strings of morphemes, terms, propositions, even arguments which have the same attributes as questions a human would ask. But of themselves, machines do not, on their own volition, prompt anything. Machines do not have a will. Machines can also be programmed to store information, instructions, and adapt responses to evolving instructions, They can also in that capacity write their own instructions, build and deploy, if programmed to, their own data bases and applications, and with great agility, even exceeding their human makers. Even a hammer exceeds human ability to break rocks which would otherwise break human hands if hands tried to break rocks. A technology, actually a technique, strictly, we will develop is an implementation of logic through the use of the rules of algebra. It is in this context that we need to situate our evolving technology of implementing ways to reason, judge, understand, the three common sense acts of the mind. Each of these acts of consciousness are quite necessarily experienced, observed, perhaps remembered and stored. Thus whenever we inquire about anything in our world, we generate data of what we observe, data of understanding, data of judging, and data of reasoning. We will call this polymorphic (many shaped) consciousness.
+
+What is logic, still and up to this point using the procedure from high school algebra of "let X (logic) be an unknown variable for which we are seeking a solution"? We can begin through the practice logic, or what we might consider logical structures, by thinking about and through our reality. Thus using our thinking structures informed by our truly polymorphic human consciousness we can define logic. Through understanding we answer the question "what is it?". Within this question are the numerous questions of "what is it composed of?", questions of our experience of whatever it about which we inquire. By judgment we determine answers to the question "whether it is so?". By reason we mean finding valid conclusions which answer the question "why is it so?".  Logic is the art and science of answering these questions. To enhance our understanding ("what is logic?") we can contrast logic with ethics which answers the question "what should we do about it?".
+
+We can go one step further. Through each of these questions we can ferret out typical answers. To the questions for understanding, "what is it?", we can propose two answers about the clarity of our understanding (going binary on us right now): "it is clear what it is," or "it is not clear what it is." Similarly we can propose two answers to questions of judgment, "whether it is or not": "is it true," or "it is not true." Lastly, in the field of inquiry called logic, we can propose two answers about the validity of our reasoning: "it is valid," or "it is not valid." We must immediately realize we have mutually exclusive, and again in the realm of a particular inquiry, completely exhaustive answers, all with exclusive "or," that is, disjunctive. If we add up all the trues and all the falses we get all of the answers to all of the questions for judgment. So we suppose now we need some clarification about what we mean by clear, true, and valid.
+
+We will consider our understanding to be clear when propositions are unambiguous, with terms well defined and not admitting of vague, hard to measure, and if not able to measure, hard to distinguish from other terms, and their role in propositions. Clarity is also achieved when the relationships among propositions are unambiguous.
+
+Our judgments are true is easier if we follow Aristotle's formula in his Metaphysics 1011b25: “To say of what is that it is not, or of what is not that it is, is false, while to say of what is that it is, and of what is not that it is not, is true.” This is correspondence theory of truth, the need for which is familiar perhaps to anyone who has dealt with two year olds. 
+
+Valid reasoning is even easier as this layer is all about arguments. An argument (terms in propositions, propositions in premises, reasoning in conclusions) is valid only when clear terms, true prepositions in premises, and the conclusion necessarily follows from the premises. As simple as this is, if terms are not well-defined, and/or propositions are not clearly true (or false), then an arguments are not valid. Even if terms are well-defined and unambiguous, propositions are clearly true or false, arguments are not valid if the conclusion follows a line of reason not supported by clear premises and unambiguous terms. Finally, and here we actually get practical, even if the line of reasoning formally is supported by clearly understood premises, an argument is not valid in the field of observable reality if the conclusion makes no sense, common or otherwise.
+
+Let's use cats and gods in Peter @
+
+$$
+\begin{array}{r | c}
+\text{cats and gods}                 &                 \\ \hline  
+\text{A: if I am a cat, then B: I am a god} & A \rightarrow B \\
+\text{but, A: I am a cat}                    & A               \\ \hline
+\text{therefore, B: I am a god}         & \therefore B
+\end{array}
+$$
+
+
+
+
 
 ## Two schools of thought
 
@@ -18,62 +49,94 @@ knitr::opts_chunk$set(echo = TRUE)
 
 On the other hand there is the expectation school which thinks about probability as the logical consequence of how relatively likely one event or hypothesis is to another. In @keynes2013treatise view, the theory of probability is the logic of probable inference. Probability is a syllogistic relation from a hypothesis to data, and on to a conclusion. Each hypothesis is more or less plausible than another as measured by the ways in which data are consistent with a particular hypothesis. Plausibilities are bounded by extremes of impossibility and certainty, Aristotelian deductive logic is a special case of plausibility. This means we need more than binary true-false deduction to make statements about the plausibility of hypotheses in the face of data. We also no longer need the certainty uncomfortably afforded by leaps of imaginative extension of samplings into an infinity of possible combinations of hypotheses and events, namely the count of incidents. Instead we do need the count of ways in which data are consistent with a particular hypothesis. We now start from plausible numbers of ways consistent with data instead of infinite counts of instances of data.
 
-The expectation school's results build on an algebra of the logic of propositions. Here are tables of algebraic relationships among propositions. Once we establish these rules we can operate on any logical statement with the power of 9th grade elementary algebra. We need just three algebraic operations to work the algebra: AND, NOT, XOR. We need to add something else to our analysis: common sense. Just because the math might (and usually will) work out logically, does not mean we can interpret our results in a particular and realistic context. This is the problem of **existential import** which @boole1848calculus and purely symbolic logicians eschew. They would have us believe that the math is the math, without reference to anything real.
+The expectation school's results build on an algebra of the logic of propositions. We will begin with tables of algebraic relationships among propositions. Once we establish these rules we can operate on any logical statement with the power of 9th grade elementary algebra. We need just three algebraic operations to work the algebra for pairs of propositions $a$ and $b$: AND ($a \times b$), NOT ($1+a$), XOR ($a+b$). We need to add something else to our analysis: common sense, both espoused by @jaynes2003probability and @kreeft2005socratic in natural sciences and philosophy. Just because the math might work out logically  (and usually will if we are very careful), does not mean we can interpret our results in a particular and realistic context. This is the problem of **existential import** which @boole1848calculus and purely symbolic logicians seem to eschew. They would have us believe that the math is the math, without reference to anything real as surveyed by @wu1969problem. At one extreme end of this view any $a+b$, whatever $a$ and $b$ might represent objectively, are logically equivalent to any other $a$ and $b$, whatever they might represent to the human being attempting to reason. They may indeed not even exist, even hypothetically. We will follow this convention analyzed by @read2015aristotle regarding @ackrill1975categories and @avicenna1971avicenna's commentaries.
 
-In what follows we develop together an algebraic approach to studying inference introduced by George Boole and expanded upon by @keynes2013treatise, @jaynes2003probability, and more recently @suleimenov2023improving. The logical system here relies on @aristotle2009prior four fundamental logical forms as explained, for example by, @kreeft2005socratic.
+“With an affirmation and negation one will always be false and the other true whether [Socrates] exists or not. For take ‘Socrates is sick’ and ‘Socrates is not sick’: if he exists it is clear that one or the other of them will be true or false, and equally if he does not; for if he does not exist ‘he is sick’ is false but ‘he is not sick’ true.” ( _De Interpretatione_, 13b26-31)
+
+Here we will blithely consider propositions and their subject to at least probably exist so as to be able to discuss them with respect to the very real actions we undertake upon deliberation, reflection, and understanding of our conscious experience and held beliefs.
+
+In what follows we develop together an algebraic approach to studying inference introduced by @boole1848calculus and expanded upon by @peirce1870description, @keynes2013treatise, @jaynes2003probability, and more recently @suleimenov2023improving. The logical system here relies on four fundamental logical forms developed by @aristotle2009prior and as explicated in practical logic by @kreeft2005socratic and  @toulmin2003uses. Far deeper than this discussion, but notable in grounding these techniques is @carnielli2015method.
 
 ## Rules
 
 Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
 
+$$
 \begin{array}{c | c c}
 + (XOR)   &  0    &  1 \\ \hline
 0         &  0    &  1 \\
 1         &  1    &  0 
 \end{array}
+$$
 
-Addition with boolean values $\{0,1\}$ is the same as that of the logical exclusive OR operations, XOR. Since each element equals its opposite, subtraction is thus the same operation as addition, so that $1-1=1+1=0$.
+Addition with boolean values $\{0,1\}$ is the same as that of the logical exclusive OR operations, XOR. Since each element equals its opposite, subtraction is thus the same operation as addition, so that $0-0=0$,  $0-1=1$ (remembering the clock with just two settings!), $1-0=1$, and $1-1=0$, anyway, all equivalent to the $+$ rules.
 
 The multiplication is multiplication modulo 2 (see the table below), and on boolean variables corresponds to the logical AND operation.
 
+$$
 \begin{array}{c | c c}
-x (AND)   &  0    &  1 \\ \hline
+\times (AND)   &  0    &  1 \\ \hline
 0         &  0    &  0 \\
 1         &  0    &  1 
 \end{array}
+$$
 
 The NOT logic simply takes a 0 and flips it to 1, and if 1 flips it to zero.
 
+$$
 \begin{array}{c | c}
-\neg (NOT) x   &  1+x   \\ \hline
-0              &  1      \\
-1              &  0      
+\neg (NOT)   &  1+x   \\ \hline
+0            &  1      \\
+1            &  0      
 \end{array}
+$$
 
-With these three operations we can evaluate any logical statement. 
+With these three operations we can evaluate any logical statement. And we must remember that NOT is not the subtraction operation we are very familiar with from non-binary algebra. 
 
-Here is a table of several useful expressions based on AND, XOR, and NOT. For any two propositions $x$ and $y$ whose values can only take on a 0 or 1, so that when $x=0$, we mean $x$ is false, otherwise (that is, $x=1) true.^[Boole has the negation of x as 1-x. We follow Wildberger's suggestion and use 1+x, given that all subtractions end up being addition in mod 2 arithmetic.]
+Here is a table of several useful expressions based on AND, XOR, and NOT. For any two propositions $x$ and $y$ whose values can only take on a 0 or 1, so that when $x=0$, we mean $x$ is false, otherwise (that is, $x=1) true.^[Boole has the negation of x as 1-x. We follow @carnielli2015method 1+x, given that all subtractions end up being addition in mod 2 arithmetic.]
 
-\begin{array}{c c | c c c c}
-x & y & xy & x+y & 1+x & y|x=1+x+xy \\ \hline
-0 & 0 & 0 & 0 & 1 & 1 \\
-0 & 1 & 0 & 1 & 1 & 1 \\
-1 & 0 & 0 & 1 & 0 & 0 \\
-1 & 1 & 1 & 0 & 0 & 1 \\ \hline
-x & y & x \land y & x \oplus y & \neg x & x \rightarrow y \\ \hline
-x & y &           & (x \lor y) \land \neg (x \land y) & \neg x \lor y &
+$$
+\begin{array}{c c | c c c c c}
+  &   & AND & XOR & NOT & y \mid x & SUB \\ \hline
+x & y & xy & x+y & 1+x & 1+x+xy    & x-y=x+y\\ \hline
+0 & 0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 0 & 0 & 1 & 0\\ \hline
+x & y & x \land y & x \oplus y & \neg x,\,\overline x & x \rightarrow y \\ \hline
+x & y &     -      & (x \lor y) \land \neg (x \land y) & \neg x \lor y & \neg (x \oplus (x \land y)) \\
+\hline
 \end{array}
+$$
 
-The last row describes the algebraic operations in term of propositional logic as applied to boolean values of $\{0.1\}. We now study $y|x=1+x+xy$. 
+The last row describes the algebraic operations in term of propositional logic as applied to Boolean values of $\{0, 1\}$. I can easily get lost in that row. I tend to prefer 9th grade algebraic expressions. 
 
-That last column does deserves immediate attention since it forms the foundation of conditional (reasonably expected) probability. Aristotle recorded four logical forms, two in the affirmative, two negative, two universal, two contingent. Medieval logicians called the two affirmative forms A and I for the first two vowels in _AffIrmo_, I affirm, and the two negative forms E and O from the Latin _nEgO_, I deny. Together they form the **Square of Opposition**. 
+The last column uses the negative to SUBtract $y$ from $x$. We might be tempted to say that $x-y= x+ (1+y) = 1+x+y=1+(x+y)$ so that the subtraction operator is "NOT the ADD" operator. Nice try! We must always go back to the most literal, most primitive operations, namely the addition and multiplication rules which govern these more derived expressions.  
 
-Here S is the subject and P the predicate. Any subject S signifies what it is we are talking about, say, rain. Any predicate P signifies what the subject is about, say, falling to the ground. Equations and identities do not have a subject or a predicate and themselves might be the subject or predicate. But all propositions do have a subject and a predicate, just like in 3rd grade when we learned to write and speak in complete sentences, that is, in propositions, which contain a subject (usually a noun) and a predicate (usually a verb). We assume that when we apply the forms to concrete examples of propositions, the content of the form, that is, the S and the P, exist. For Thomas Aquinas signs are physical manifestations that allow us to understand something beyond their immediate appearance, like a footprint manifesting someone's presence or smoke manifesting fire. This something with an immediate appearance we will assume without further bother, that it somehow exists. Perhaps we append the particle _any_ to S and P to get any rain and any falling (of rain).
+That next to the last column will deserves some important attention since it forms the foundation of conditional (reasonably expected) probability. But first some very helpful derived relationships will make our work going forward a lot smoother.
 
-In the table, _decisions_ is the subject S, what we are talking about, and _are rational_ is the predicate P, what the subject is about.
+$$
+\begin{array}{c c | c c c c c}
+x & x & xx=x^2 & xxx=x^3 & x+x=2x & x+x+x=3x & x-x=x+x\\ \hline
+0 & 0 & 0      & 0       & 0      & 0        & 0      \\
+0 & 0 & 0      & 0       & 0      & 0        & 0      \\
+1 & 1 & 1      & 1       & 0      & 1        & 0      \\
+1 & 1 & 1      & 1       & 0      & 1        & 0      \\ \hline
+  & = & x      & x       & 0      & x        & 0      \\ \hline
+\end{array}
+$$
 
-\begin{array}{r | c | r | c }
-Form  & Proposition & Sentence & Algebra & Interpretation \\
+What happens here is that there are no monomial terms of any higher degree than 1; no quadratic or cubic terms at all. Two propositions literally cancel each other, as the Germans might say an _Aufhebung_ event. But three return the single proposition. All of this is the result of the modulo 2 arithmetic to which we constrain ourselves.
+
+We now study $y|x=1+x+xy$ in three moves. The first move is to realize that, at least for binary data, Aristotle discovered four logical forms, two in the affirmative, two negative; two universal, two contingent. Medieval logicians called the two affirmative Forms A and I for the first two vowels in _AffIrmo_, Latin for "I affirm," and the two negative forms E and O from the Latin _nEgO_, "I deny." Together they form the **Square of Opposition**. Here S is the subject and P the predicate. Any subject S signifies what it is we are talking about, say, rain. Any predicate P signifies what the subject is about, say, falling to the ground. 
+
+Equations and identities do not have a subject or a predicate and themselves might be the subject or predicate. But all propositions do have a subject and a predicate, just like in 3rd grade when we learned to write and speak in complete sentences, that is, in propositions, which contain a subject (usually a noun) and a predicate (usually a verb). We assume that when we apply the forms to concrete examples of propositions, the content of the form, that is, the S and the P, exist. For Thomas Aquinas signs are physical manifestations that allow us to understand something beyond their immediate appearance, like a footprint manifesting someone's presence or smoke manifesting fire. This something with an immediate appearance we will assume without further bother, that it somehow exists. Perhaps we append the particle _any_ to S and P to get any rain and any falling (of rain).
+
+We build a table of logical forms in this first move. In the table, _decisions_ is the subject S, what we are talking about, and _are rational_ is the predicate P, what the subject is about.
+
+$$
+\begin{array}{c | c | c | c }
+Form  & Proposition & Sentence & Algebra \\
 \hline
 A     & \text{All S is P}        & \text{"All decisions are rational."}         & a(1+b) = 0      \\ 
 E     & \text{No S is P}         & \text{"Not all decisions are rational."}     & ab = 0          \\
@@ -81,9 +144,13 @@ I     & \text{Some S is P}       & \text{"Some decisions are rational."}        
 O     & \text{Some S is not P}   & \text{"Some decisions are not rational."}    & a(1+b) \neq 0   \\
 \hline
 \end{array}
+$$
 
-In Form A "All decisions (a) are rational (b)." Logically $a$ and not $b$ is false (0), that is, algebraicly $a(1+b) = 0$. "Decisions" are not "rational" is false according to Form A. The obverse must be true, that "No decisions are not rational." We recall we are using "+" as exclusive OR, XOR with this algebraic rearrangement. Let's study this Form a bit more.
+The second move is to parse the Form A proposition "All decisions (a) are rational (b)." Logically $a$ and not $b$ is false (0) in Form A, that is, algebraicly, $a(1+b) = 0$. "Decisions"  and "not-rational" is false, that is, inconsistent according to Form A. The obverse must be true, that "No-decisions are not-rational," as if we might be able to interpret this double negative. One more swipe at interpretation is called for. To say that "all of anything is something else" is, effectively to identify "anything" with "something else."  If this statement is true, as we are positing here in the form, then it cannot be true that both "anything = $a$" and "not-something else = $(1+b)$" can coexist. Thus the logical Form A seems to admit a very basic principle we would hold alongside all other principles (Aristotle called this _metaphysics_), namely, the _Principle of Non-Contradiction_. Yes, we cannot, so far it seems, to be in two places at the same time.
 
+In a third move, we use the NOT operation on Form A. We recall we are using "+" as exclusive OR, XOR with this algebraic rearrangement.
+
+$$
 \begin{array}{c| c l}
 statement & reason \\ 
 \hline
@@ -91,17 +158,239 @@ statement & reason \\
 2 & 1 + a(1+b) = 1 & \text{Symmetric property} \\
 3 & 1 + a + ab = 1 & \text{Distribution of multiplication over addition property} \\
 \hline
-4 & a \rightarrow b = b|a & \text{a gives some information to b} \\ 
+4 & a \rightarrow b = b \mid a & \text{a gives some information to b} \\ 
 \hline
 \end{array}
+$$
+Simply negating (using 1+) the Form A definition reveals a conditional relationship between $a$ and $b$. Saying that $a$ AND $not-b$ is possible when we negate the Form A requirement, means $a$ does share something with $b$. So-called "implication" means that a shares a's information with b. This is the primary meaning we ascribe to "a conditions b", $b \mid a$. We now have all the ingredients to use this framework to discover a principled path to the expectations approach to probability, that is, counting the ways in which data are consistent with hypotheses. But before we enter that particular room, we need to argue a bit more, that is, discover valid and invalid logical arguments.
 
-So-called "implication" means that a shares a's information with b. This is the primary meaning of "a conditions b", a|b.
+## Making a valid point
+
+Let's begin with any two propositions or statements or messages $A$ and $B$. Specifically, let's talk about the weather. We let
+
+$$
+\begin{array}{r l}
+A &= \text{You get an A.} \\
+B &= \text{I give you a lollipop.}
+\end{array}
+$$
+
+The implication is the statement _If A, then B_. We will label A the _antecedent_ and B the _consequent_ Some of us might even want to go further than the literal logic and interpret, allegorically, A as the _cause_ and B the _effect_. This will also be our starting point with the coherence and validity of our reasoning as well as plausibility. But we must first begin even more strongly with a guaranteed statement from the following deduction that stems from the implicating condition, the if-then. And by guaranteed we will mean with certainty. Yes, we can still talk about maybe and plausibility if we grant that the proposition "this is plausible" is TRUE or FALSE. First no quibbling with "If it you get an A, then it _must_ happen that I will give you a lollipop." But I can also quibble that, "If it you might get an A, then it _must_ happen that "I might give you a lollipop." Or even this (not so nice, perhaps passive aggressive approach) bit of wobbling that "If it you do get an A, then it _must_ happen that "I might give you a lollipop."
+
+The full name of structure of our first syllogism is **modus ponendo ponens** which is Latin for _the way that, by affirming, affirms_ , also known as _affirming the antecedent_ . And by _syllogism_ we mean a linking together of at least two separate propositions, messages, symbols, tokens, and meanings.
+
+$$
+\begin{array}{r | c}
+\text{Modus Ponens}                 &                 \\ \hline  
+\text{if A is (plausibly) true, then B is (plausibly) true} & A \rightarrow B \\
+\text{and A is (plausibly) true}                    & A               \\ \hline
+\text{therefore, B is (plausibly) true}         & \therefore B
+\end{array}
+$$
+
+With or without the qualifier _plausible_ we will claim to have a deductive inference guaranteed to be consistent with the logic of implication.^[It is invalid to affirm the consequent, that is say B is true, so A must be true, a frequent and very misleading and logically illegal argument on talk shows, especially when the subject is political.] We will demonstrate this claim shortly, actually prove it. For now let's just have a rather informal chat about TRUE and FALSE in this syllogism.
+
+1. Suppose it is true that you get an A _and_ it is true that I give you a lollipop. Since I kept my promise, the implication, the statement, is true. Doesn't this sound like a logical conjunction? Both A and B are true, that is $AB = 1 \times 1 = 1 = TRUE$ according to the hard work we did in building a binary algebra.
+
+2. Suppose it's true that you get an A but it's false that I give you a lollipop. Since I didn't keep my promise, the implication is false. This truth values again act like a logical conjunction. If A is true and B is false, we have $AB = 1 \times 0 = 0 = FALSE$. 
+
+3. What if it is false that you get an A? Whether or not I give you a lollipop (Q is true or Q is false), I have not broken my promise. Thus, the implication cannot be false, so the statement must be true. This case is no longer a simple logical conjunction, but we can use the negation to help us out with the idea that If A is false it is not-A, when A would otherwise be true. The conjunction $\neg{A}B = 0 \times 1 = 0 = FALSE$ or equivalently $1+AB=1 +1 \times 1=2 mod 2=0=FALSE$. 
+
+Let's use our Algebra of Boole to check the reasoning in our informal chat.
+
+1. We set out the structure. We let $P:$ "you get an A" and $Q:$ "I'll give you a lollipop." With this assignment of propositions we state the argument as $[\,P \,\, \text{AND} \,\, (P \,\, \text{IMPLIES} \,\, Q)\,] \,\, \text{IMPLIES} \,\, Q$.
+
+2. we translate this structure into algebra. For any $A$ and $B$, $A \,\, \text{AND} \,\, B = AB$, and $A \,\, \text{IMPLIES} \,\, B = 1 + B + BA$. Also we know that $A^2 = AA = A$ and $A + A = 0$ in the mod 2 arithmetic of the algebra of Boole. This means that our argument can be represented algebraicly as this expression.
+
+3. Then at last we reduce all expressions algebraicly. If we end up with a 1, then we have logical satisfaction.
+
+4. We apply common sense and existential import.
+
+$$
+\begin{array}{r l}
+[\,P \,\, \text{AND} \,\, (P \,\, \text{IMPLIES} \,\, Q)\,] \,\, \text{IMPLIES} \,\, Q & \text{[modus ponens]}\\ \hline
+P(1+P+PQ) &\text{IMPLIES}\,\, Q \\
+P + PP + PPQ &\text{IMPLIES}\,\, Q \\
+P + P + PQ &\text{IMPLIES}\,\, Q \\
+0 + PQ &\text{IMPLIES}\,\, Q \\ 
+1 + PQ + PQ(Q) &= 1 + PQ + PQ \\
+               &= 1 + 0 \\
+               &= 1
+\end{array}
+$$
+
+That wasn't so bad! We just proved, quite logically, that this argument returns a 1, to which we assign the value TRUE. Yes, it is valid logically.
+
+Let's leap into the other mainstay of valid logic, the **modus tollens** argument structure. The full name is **modus tollendo tollens** which is Latin for _the way that, by denying, denies_ , also known as _denying the consequent_. Grades and lollipops exist, and notwithstanding, the procedure is the same as for _modus ponens_. The structure looks like this.
+
+$$
+\begin{array}{r | c}
+\text{Modus Tollens}                 &                 \\ \hline  
+\text{if A is true, then B is true} & A \rightarrow B \\
+\text{and B is not true}                    & \neg B               \\ \hline
+\text{therefore, A is not true}         & \therefore \neg A
+\end{array}
+$$
+
+1. We set out the structure. We let $P:$ "you get an A" and $Q:$ "I'll give you a lollipop." With this assignment of propositions we state the _modus tollens_ argument as $[\,\text{NOT} \,\, Q \,\, \text{AND} \,\, (P \,\, \text{IMPLIES}\,\, Q)\,] \,\,\text{IMPLIES} \,\, \text{NOT} \,\, P$.
+
+2. We translate this structure into algebra. Again for any $A$ and $B$, $A \,\, \text{AND} \,\, B = AB$, and $A \,\, \text{IMPLIES} \,\, B = 1 + B + BA$. Also we use the operator $\text{NOT}\,\, A = 1+A$ This means that our argument can be represented algebraicly as this expression.
+
+3. We reduce all expressions algebraicly. If we end up with a 1, we have logical satisfaction: the argument is logically consistent. 
+
+4. We apply common sense and existential import.
+
+$$
+\begin{array}{r l}
+[\,\text{NOT} \,\, Q \,\, \text{AND} \,\, (P \,\, \text{IMPLIES}\,\, Q)\,] \,\,\text{IMPLIES} \,\, \text{NOT} \,\, P & \text{[modus tollens]}\\ \hline
+(1+Q)(1+P+PQ) &\text{IMPLIES}\,\, 1+P \\
+1 + P + PQ + Q + QP + PQQ &\text{IMPLIES}\,\, 1+P \\
+1 + P + Q + PQ &\text{IMPLIES}\,\, 1+P \\
+= 1+ (1 + P + Q + PQ) + (1 + P + Q + PQ)(1+P)  \\
+=  1 + (1 + P + Q + PQ) + (1+ P + Q + PQ + P + PP + PQ + PPQ) \\
+= 1 + 0 \\
+= 1
+\end{array}
+$$
+
+TRUE again! We have yet another valid logical argument _structure_ only if step 4, _common sense_, invokes a result. I have to be able to get a grade of A (it is possible at least) to get an actual lollipop (sugar-free and no sugar substitutes). Grades of A and lollipops exist and are at least somewhat accessible.
+
+# Nay and Yay
+
+It turns out that much rhetoric, and some marketing campaigns and technology projects, use as least two invalid arguments: affirming the consequent and denying the antecedent. The first is a fallacy of _modus ponens_: Affirm the Consequent. The second is a fallacy of _modus tollens_: Deny the Antecedent. We shall focus our attention on splitting the hairs of the _modus tollens_ fallacy. We might want to examine the symmetry of these arguments as well.
+
+Using our grade-for-lollipop scheme _modus tollens_ states that "P: If you get an A, then Q: you receive a lollipop (or other appropriate bribe/incentive)."; but "NOT Q: you did not get a lollipop"; so, "NOT P: you did not get an A." Common sense will arrive at lots of, reasons why you did not get a lollipop, for example, local lollipop supply chain disruptions. But there is only one reason you did not get a lollipop even admissible here (that is, in the premise).
+
+Here is the fallacy portion of our program for _modus tollens_: Deny the Antecedent (P: a grade of A). This structure follows the line of thinking that "P: If you get an A, then Q: you receive a lollipop (or other appropriate bribe/incentive)."; but "NOT P: you did not get an A"; so, "NOT Q: you did not get an lollipop." Polling nine out of ten (on average) groups of board members, project teams, classrooms full of students, over a span of almost 50 years say "this makes sense. So what is the big deal?" At least let's examine, from our principled perch on the binary branch of the algebra of Boole, whether or not this is so (yet another binary choice: Latin, _an sit?_, "is it?" ).
+
+1. We set out the structure. We let $P:$ "you get an A" and $Q:$ "I'll give you a lollipop." With this assignment of propositions we state the _modus tollens: denying the antecedent_ argument as $[\,\text{NOT} \,\, P \,\, \text{AND} \,\, (P \,\, \text{IMPLIES}\,\, Q)\,] \,\,\text{IMPLIES} \,\, \text{NOT} \,\, Q$.
+
+2. We translate this structure into algebra. Again for any $A$ and $B$, $A \,\, \text{AND} \,\, B = AB$, and $A \,\, \text{IMPLIES} \,\, B = 1 + B + BA$. Also we use the operator $\text{NOT}\,\, A = 1+A$ This means that our argument can be represented algebraicly as this expression.
+
+3. We reduce all expressions algebraicly. If we end up with a 1, we have logical satisfaction: the argument is logically consistent. 
+
+4. We apply common sense and  our canon of existential import.
+
+$$
+\begin{array}{r l}
+[\,\text{NOT} \,\, P \,\, \text{AND} \,\, (P \,\, \text{IMPLIES}\,\, Q)\,] \,\,\text{IMPLIES} \,\, \text{NOT} \,\, Q & \text{[denying the antecedent]}\\ \hline
+(1+P)(1+P+PQ) &\text{IMPLIES}\,\, 1+Q \\
+1 + P + PQ + P + PP + PPQ &\text{IMPLIES}\,\, 1+Q \\
+1 + P &\text{IMPLIES}\,\, 1+Q \\
+= 1+ (1 + P) + (1 + P)(1 + Q)  \\
+=  1 + (1 + P) + (1+ Q + P + PQ) \\
+= 1 + P + PQ \\ 
+\neq 1 \\
+\end{array}
+$$
+
+With our logical Form A  $P + PQ = P(1+Q) = 0$ but someone arguing by denying the antecedent finds on the chalkboard that $1+P + PQ = 1 + P(1+Q) \neq 1$, and then without any nudging from the instructor subtracts 1 from both sides to get $P(1+Q) \neq 0$ violating Form A's principle of non-contradiction. We can't be in two places at the same time, at least in Newtonian space-time. But look at Form O, "Some P is NOT-Q" $\, = P(1+Q) \neq 0$," and we discover the reason why denying the antecedent is a fallacy: sometimes A's do not yield lollipops, in contradistinction to the premise of this whole argument. The only way the argument holds any water is to highly qualify the premise itself. But is that not, in philosophy class at least, putting "des-Cartes before the horse," (all puns intended)?
+
+Why belabor this point? First, in my casual sampling experience over 5 decades I find that my hypothesis that 9 out of 10 people with quite a bit of standardized and highly structured education believe that denying the antecedent is a valid piece of logic. Second, some of these folks, and nearly all who attend schools and colleges of business and engineering, have been drilled with Null Hypothesis Significance Testing as the only approach for practical statistical inference. Third, NHST uses a _modus tollens_ valid piece of argumentation, but in many instances, these same structurally educated folk, often deploy arguments which deny the antecedent. 
+^[ To get an idea of the order of magnitude of the potential usage of NHST, [according to recent enrollment trends published by AACSB](https://www.aacsb.edu/insights/reports/2024/masters-enrollment-trends-at-aacsb-schools)  about 1,000,000 students world-wide annually (on a very rough average over the decade spanning 2014-2024) and using [U.S. Department of Education data for business school graduates](https://nces.ed.gov/pubs93/93442.pdf) with an estimate of 166,000 graduates in 1974, the 50 year linear average is about 600,000 graduates per year. Thus in a recent 10-year period approximately $(0.9)(0.8)(1,000,000)(10)=7,200,000$ students and in a 50 year span a very rough order of magnitude estimate of $(0.9)(0.8)(600,000)(50)=21,600,000$ students will have taken core curriculum statistics courses mostly (say 80\% to be conservative) based on the null hypothesis / frequentist paradigm with my very rough posterior rate of 90\% who identify the _modus tollens deny the antecedent_ fallacy as logically virtuous.]
+
+In a regression of wages dependent on education, we suppose it is found that the impact of education is not consistent with being zero, somehow throughout most of the sample. We waive our rights to determine the thresholds inherent in the judgment of consistency, or even what a sample is and what _most of_ entails. Under the null hypothesis we suppose that impact is, for all intents and purposes, nil. Otherwise it is not. P: If nil, then Q: accept the null hypothesis of no impact. However, we find NOT-P: not nil. Therefore, NOT-Q: do not accept the null hypothesis as true. In fact, under null hypothesis lore, not to accept the null is to reject the null and accept the alternative, here that there is an impact (statistically significant, etc., usw, ktl, and so on). But, as we have already seen, this fallacious argument boils down to FORM O relief that "Some P: impacts are Q: not significant (null hypothesis)." ^[Recent work by @nakhle4781598efficacy in clinical medical settings exploit this idea. While both null hypothesis testing and Bayesian approaches yielded the same binary result, clinicians benefit from a knowledge of the "strength of evidence" available only in the Bayesian approach. @mertens2023new develop proposals for obviating known and emerging threats to interpretation of empirical research in information systems based on abuses of hypothesis testing approaches.]
+
+There is a "yay" in the offing, namely, affirming the consequent, a fallacy of the logical abuse of _modus ponens_. Here is the fallacy portion of our program for _modus ponens_: Affirming the Consequent (Q: lollipop bribe).
+ 
+1. We set out the structure. We let $P:$ "you get an A" and $Q:$ "I'll give you a lollipop." With this assignment of propositions we state the affirmation of the consequent argument as $[\,Q \,\, \text{AND} \,\, (P \,\, \text{IMPLIES} \,\, Q)\,] \,\, \text{IMPLIES} \,\, P$.
+
+2. we translate this structure into algebra. For any $A$ and $B$, $A \,\, \text{AND} \,\, B = AB$, and $A \,\, \text{IMPLIES} \,\, B = 1 + B + BA$. Also we know that $A^2 = AA = A$ and $A + A = 0$ in the mod 2 arithmetic of the algebra of Boole. This means that our argument can be represented algebraicly as this expression.
+
+3. Then at last we reduce all expressions algebraicly. If we end up with a 1, then we have logical satisfaction.
+
+4. We apply common sense and existential import.
+
+$$
+\begin{array}{r l}
+[Q \,\, \text{AND} \,\, (P \,\, \text{IMPLIES} \,\, Q)] \,\, \text{IMPLIES} \,\, P & \text{[modus ponens]}\\ \hline
+Q(1+P+PQ) &\text{IMPLIES}\,\, P \\
+Q + QP + PQQ &\text{IMPLIES}\,\, P \\
+Q + PQ + PQ &\text{IMPLIES}\,\, P \\
+Q + 0 &\text{IMPLIES}\,\, P \\ 
+1 + Q + QP &\neq 1 \\
+\end{array}
+$$
+
+This was a little easier to set up and subsequently also understand. We have one-way causality from getting an A to receiving a lollipop. That's the admissible rule we must abide by. In fact it is a constraint imposed on this argument, a requirement with which we must comply (at least here). The _modus ponens_ affirmation of the consequent is yet another example of a logical inversion. The reply to this fallacy is that the fallacy titrates to making the consequent the antecedent. I'm pretty sure that if I gave my son a lollipop he might, or he might not, get an A on his mixed fractions test in 4th grade. In fact after I gave him the lollipop he broke out in a fever (not from the lollipop), but from yet another classroom plague of viruses. So he did not get his A. 
+
+Our rampant enchantment with connectivity technology is this affirmation of the consequent inversion with this structure. We let $P:$ "humans" and $Q:$ "technology" With this assignment of propositions we state the affirmation of the consequent argument as $[\,Q \,\, \text{AND} \,\, (P \,\, \text{IMPLIES} \,\, Q)\,] \,\, \text{IMPLIES} \,\, P$. We have two subjects, humans and technology. The predicate which links these two subjects is the implicating action "govern." Thus $P\,\,IMPLIES \,\, Q =\,$ "humans govern technology." The affirmation of the consequent "technology" results in the inversion $Q\,\,IMPLIES \,\, P = \,$ "technology governs humans." Perhaps @capek1923rur made a good point about the relationship between humans and their _roboti_.
+
+## On the horns
+
+That is, the _horns of the dilemma_, is what we ride on. We have dilemmas when we have options which conflict with one another, and each option has its own pros and cons. The pros and cons might be shared across options, but not completely, or we have literally, no dilemma to annoy us. Here are three examples, all conflicts.
+
+- The infamous **Trolley** problem, for example, testing perceptions of harm in @cushman2006role. We might imagine (that is, perform a thought experiment) whether to sacrifice one person to save a larger number.
+
+- A variant of the trolley is the **conflict of interest** dilemma. Here we imagine we might impose our personal beliefs on others, sacrificing their interests for ourselves.
+
+- Here's an **incentive conflict**. Conscientious workers will endeavor to meet their obligations without the threat of a loss in pay, and indifferent workers won't endeavor to meet their obligations study and learn even with the threat of an exam. So, incentives serve no purpose. The reasoning might be valid, but inconsistent with considering the existential import of what is a good versus a bad worker.
+
+- **Option overload or aversion?** In this dilemma when presented with only a single option, really no option except the status quo, people may be unlikely to buy, even if it's an option they like, thus aversion. On the other hand, given too many, and possibly the double-barrel of too complex, options, can lead to _analysis paralysis_, no choice, and reliance, again, on the status quo.
+
+All of the work we have done to help us relate various propositions, even test their validity and coherence, pull together the essential components of _dialectical reasoning_. In what follows we will build _constructive_ (negative propositions not allowed), and _destructive_, (many, even double negatives abound to confuse coherence). These arguments will be _simple_ (one consequent allowed) or (exclusive or) _complex_ (more than one consequent allowed). We will construct a propositional logic table first, then translate to our algebraic formulation. $\$
+
+$$
+\begin{array}{|c | c | c |} \hline
+\text{[propositional logic]}  & simple     & complex    \\ \hline
+\text{both true}      & (p \rightarrow q) \land (r \rightarrow q) & (p \rightarrow q) \land (r \rightarrow s) \\
+\text{yet, the horns} & p \lor r & p \lor r \\ \hline
+constructive          & \therefore q & \therefore q \lor s \\ \hline
+\text{both true}      & (p \rightarrow q) \land (r \rightarrow q) & (p \rightarrow q) \land (r \rightarrow s) \\
+\text{yet, the horns} & \neg q \lor \neg r & \neg q \lor \neg s \\ \hline
+destructive  & \therefore \neg p & \therefore \neg p \lor \neg r \\ \hline
+\end{array}
+$$
+
+$$
+\begin{array}{|c | c | c |} \hline
+\text{[algebraic logic]}  & simple     & complex    \\ \hline
+\text{both true}      & (1 + p + pq)(1+r+rq) & (1 + p + pq)(1 + r + rs) \\
+\text{yet, the horns} & p + r & p + r \\ \hline
+constructive          & \therefore q & \therefore q + s \\ \hline
+\text{both true}      & (1 + p + pq)(1 + r + rq) & (1 + p + pq)(1 + r + rs) \\
+\text{yet, the horns} & (1 + q) + (1 + r) & (1 + q) + (1 + s) \\ \hline
+destructive  & \therefore 1 + p & \therefore (1 + p) + (1 + r) \\ \hline
+\end{array}
+$$
+
+To illustrate our analysis of the logic, and import, of the _simple-constructive_ argument, here is an example. Many of us might recognize this argument against skepticism.^[Plato's _Gorgias_ displays an extreme skepticism is really nihilism, It works in three moves: I can't really know anything; and if I did I would not know if it is right or wrong; and if I was not ignorant of the value of knowing, I would not be able to share it anyway -- thus, I can say or do anything. The argument in our dialectial reasoning example is squarely the opposite of the skeptical triple play. Is this not some version of "I think, therefore I am"? If you answer yes, then you might know of Rene DesCartes.]
+
+- If _p_: "I know anything at all with certainty," then _q_: "I certainly exist." _AND_
+
+- If _r_: "I am ignorant of any certainty," then _q_: "I certainly exist."
+
+- _BUT_ "Either _p_: I know anything at all with certainty," _OR_ " _r_: I am ignorant of any certainty."
+
+- [_THEREFORE_ _q_: "I certainly exist."]
+
+We know we can translate these propositions, this argument, into our algebraic 
+$$
+\begin{array}{r l}
+\,(p \,\, \text{IMPLIES} \,\, q) \,\, \text{AND} \,\, (r \,\, \text{IMPLIES} \,\, q)  & \text{[simple-constructive]}\\
+\text{AND}\,\, (p \,\,\text{OR}\,\, r) & \text{IMPLIES}\,\, q \\ \hline
+(1+p+pq)(1+r+rq)(p+r) &\text{IMPLIES}\,\, q \\
+(1+r+rq+p+pr+prq+pq+pqr+pqqr)(p+r)&\text{IMPLIES}\,\, q \\
+p+r+rp+rr+prq+rrq+pp+pr+ppr+prr+pprq+prrq &\text{IMPLIES}\,\, q \\
+pq+rq &\text{IMPLIES}\,\, q \\ 
+1+(pq+rq)+(pq+rq)q & = 1+pq+rq+pqq+rqq \\
+&= 1 + 0 + 0 \\
+&= 1
+\end{array}
+$$
+Well worth the effort. All of the top-side propositions: both the two implications (conditionals) and the disjuction boil down to $(p+r)q = (p\lor r)\land q$. In words (and remembering we are using the exclusive either, or, not both) we have: "Both I certainly exist, and, either I know anything at all with certainty, or I do not." The two either-or conditions are linked both-and to the one conclusion. 
+
+Can we refute this argument, given its structure (always the maintained _hypothesis_: "if we believe this structure to be the horns of a dilemma, then we maintain this belief in all we do next with this structure.") Only by destroying the either-or conditions, or by denying the both-and linkage. Let's take the denial first. To deny the both-and linkage we would have to establish that any and all knowledge are incompatible with existence. And to do that we would have to deny the existence of a knower who can know either with or without certainty. And this is absurdly against common sense existential import. Someone is typing here! Now how can we possibly destroy the conditionals, the either "with" or "without" certitude. If we believe that nothing is certain, then the either-or statement is still true; similarly is at least one thing is certain, such as $1+1=0 $ in our binary arithmetic, and on our binary clock too. Thus refutation seems absurd again. We may indeed have arrived at a logical immutable truth! This is called a _tautology_, a meaning that is true in its structural self (in Greek, _auton_). The only way we can then refute this tautology is to present alternative structure.
+
+## Ride with Socrates
+
+We have three strategies with every dilemma: ride the horns (and risk getting gored), go between the horns (and risk getting thrown), and make another bovine to ride new horns (risk yet more horns, goring, and being thrown). On the upside, we have used logic to discover the logical consequences of our thinking. We will call all of this the intellectual process of _reasoning_ goaded on by our incessant, undying (always a spark exists) drive to know all that there is (Being, that is), and we will maintain the practical circumstance of limited time and space, so that it is process, not perfection. We will use our process of reasoning to judge whether something is or is not. And we recall that probability, or any other qualifier such as, might, could, should, would, and so on, Can be part of any proposition
 
 ## Just Suppose
 
 We can suppose, for a minute or so, that there are three propositions A, B, and C. They have context in particular situations, for example, in decision making. In this context, we might suppose that A is the proposition "developers make reasonably successful decisions". We also suppose that B is the proposition "product management makes reasonably successful decisions." And now we put proposition C into context as "Teams use data and experience consistent with prevailing recommended practices". Other than observations made by teams ad something that neither the development manager nor the product management manager might yet any specific idea about, but does have at the very least an intuitive feel about something which has yet to be revealed. Of course, we need at some point to define a bit more precisely what is meant by "reasonably successful" and "consistent with prevailing recommended practices" all for another time and deep conversation.
 
-Let's put these pieces together and use the apparatus of our logical algebra to discover literally a new insight. To couch our analysis in terms of what we need, or wish for, in our analytical logic robot we require instructions for the robot must hold to these desiderata.^[E.T. Jaynes with an algebra of George Boole with insights from Norman J. Wildberger.]
+Let's put these pieces together and use the apparatus of our logical algebra to discover literally a new insight. To couch our analysis in terms of what we need, or wish for, in our analytical logic robot we require instructions for the robot must hold to these desiderata.
 
 1. Plausibilities can be ordered as rational numbers. The so called irrational numbers such as the solution $x$ to the equation $y=x^2$, can be approximated to any degree of accuracy the robot can determine within the finite bounds of the robot's memory, ability to process, and share with those who use the robot as a tool of discovery.
 
@@ -121,36 +410,41 @@ Let's compute, with our robot's mechanisms, the joint proposition "A|BC and B|C"
 
 For Case 1 we have this calculation.
 
+$$
 \begin{array}{c | r r | l}
 \hline
 1 &        & 1+BC+ABC                                & \text{definition of } A|BC \\
 2 & \times & 1+\,C+\,BC                              & \text{definition of } B|C \\ 
 \hline
-3 &        & \require{cancel} \cancel{BC}+\require{cancel} \cancel{BC}+\require{cancel} \cancel{ABC}    & \text{since } X^2=X \\
-4 &    +   & c+\require{cancel} \cancel{BC}+\require{cancel} \cancel{ABC}              & \text{ditto }   \\
-5 &    +   & 1+\require{cancel} \cancel{BC}+ABC                       & \text{ditto }   \\ 
+3 &        & BC +BC + ABC            & \text{since } X^2=X \\
+4 &    +   & C+BC+ABC               & \text{ditto }   \\
+5 &    +   & 1+BC+ABC                & \text{ditto }   \\ 
 \hline
-6 &    =   & 1+C+ABC                                 & \text{since } X+X=0=\require{cancel} \cancel{X}+\require{cancel} \cancel{X} \\ 
+6 &    =   & 1+C+ABC                 & \text{since } X+X=0 \\ 
 \hline 
-7 & \therefore & AB|C = (A|BC)(B|C)                  & \text{definition of } 1+C+ABC \\
+7 & \therefore & AB|C = (A|BC)(B|C)  & \text{definition of } 1+C+ABC \\
 \hline
 \end{array}
+$$
 
 For Case 2 we have this calculation.
 
+$$
 \begin{array}{c | r r | l}
 \hline
 1 &        & 1+AC+ABC                                & \text{definition of } B|AC \\
 2 & \times & 1+\,C+\,AC                              & \text{definition of } A|C \\ \hline
-3 &        & \require{cancel} \cancel{AC}+\require{cancel} \cancel{AC}+\require{cancel} \cancel{ABC}    & \text{since } X^2=X \\
-4 &    +   & c+\require{cancel} \cancel{AC}+\require{cancel} \cancel{ABC}              & \text{ditto }   \\
-5 &    +   & 1+\require{cancel} \cancel{AC}+ABC                       & \text{ditto }   \\ \hline
-6 &    =   & 1+C+ABC                                 & \text{since } X+X=0=\require{cancel} \cancel{X}+\require{cancel} \cancel{X} \\ \hline 
+3 &        & AC+AC+ABC    & \text{since } X^2=X \\
+4 &    +   & C+AC+ABC              & \text{ditto }   \\
+5 &    +   & 1+AC+ABC                       & \text{ditto }   \\ \hline
+6 &    =   & 1+C+ABC                                 & \text{since } X+X=0 \\ \hline 
 7 & \therefore & BA|C = (B|AC)(A|C)                  & \text{definition of } 1+C+ABC \\ \hline
 \end{array}
+$$
 
 Since BA=AB by the commutativity of the both-and operation we now also have shown that Case 1 is logically equivalent to Case 2. Here is the new knowledge, an insight, from all of these deductions.
 
+$$
 \begin{array}{c | r c | l}
 \hline
 1 &                &  AB|C = (A|BC)(B|C)         & \text{ Case 1 is true } \\
@@ -162,12 +456,13 @@ Since BA=AB by the commutativity of the both-and operation we now also have show
   &                &                             & \text{if a=c, and b=d, and a=b, then c=d} \\
 \hline
 \end{array}
+$$
 
-We have just also unveiled the vaunted product rule of probability. We have but one more step to apply this rule to the work of our managers, namely make reasonable decisions. Here a decision will take the form of a hypothesis, that if true, will indicate a direction in which managers might reasonably act.
+We have just also unveiled the vaunted product rule of probability. We have but one more step to apply this rule to the work of our managers, namely, the making of reasonable decisions, where reasonable at the very least means logically valid deductions about the consistency of data with hypotheses. Here a decision will take the form of a hypothesis, which, if true, will indicate a direction in which managers might reasonably act.
 
 ## Torturing Data with Hypotheses
 
-So line 5 of our proof is true. By desiderata 1, we assign numbers to logical expressions. These numbers for our purposes will lie between 0 and 1 such that, for a mapping $P(x)$ of plausibility of the truth of a logical expression $x$ to the interval of rational numbers (and approximations of so-called irrational numbers) between 0 and 1 inclusive, we have for rational number $0< r \leq 1$
+So line 5 of our conditional event proof is true. By desiderata 1,namely, "plausibilities can be ordered as rational numbers," we assign numbers to logical expressions which in turn represent events. For comparison purposes across wildly disparate events, plausibility scores will lie between 0 and 1 such that, for a mapping $P(x)$ of plausibility of the truth of a logical expression $x$ to the interval of rational numbers (and approximations of so-called irrational numbers) between 0 and 1 inclusive, we have for rational number $0< r \leq 1$
 
 $$
 P(x) = \begin{cases}
@@ -176,7 +471,7 @@ P(x) = \begin{cases}
 		 \end{cases}
 $$
 
-Yes, we are optimistic, looking for the plausible truth value of a logical proposition.^[We could just as easily have picked $0 < r \leq 100$. As long as there is a strict ordering of pairs of numbers in the interval, a monotonic sequence, then we can generally use whatever interval we want.] Now it gets very serious since we now examine what exactly we will mean by reasonable, also known as rational.
+Yes, we are optimistic, looking for the plausible truth value of a logical proposition.^[We could just as easily have picked $0 < r \leq 100$. As long as there is a strict ordering of pairs of numbers in the interval, what the mathematicians call a monotonic sequence, then we can generally use whatever interval we want.] Now it gets very serious since we now examine what exactly we will mean by reasonable, also known as rational.
 
 We let $H=A$ for our ordered list of hypotheses $H$, $D=B$ for our list of data $D$, $X=C$ for our list of instances of prior experience, previous choices and data $X$. With these substitutions we now have this expression.
 
@@ -201,584 +496,199 @@ $$
 P(D) = P(D|H)P(H) + P(D|\overline{H})P(\overline{H}) 
 $$
 
-The algebra works out to simplifying the RHS of this expression all by remembering that 1+1=0 and x+x=0 in mod 2 arithmetic and algebra. We just need to show that the RHS = LHS.
+The algebra works out to simplifying the RHS of this expression all by remembering that 1+1=0 and $a+b=0$ in mod 2 arithmetic and algebra. We just need to show that the RHS = LHS, other words, one side implies the other.
 
 $$
 \begin{array}{r l}
-D &= (1+H+DH)H + (!+(1+H)+(1+H)D)(1+H) \\
+D &= (1+H+DH)H + (1+(1+H)+(1+H)D)(1+H) \\
   &= H+H+DH+1+1+H+D+DH+H+H+H+DH+DH \\
   &= D
 \end{array}
 $$
 
-We have a match. We have only now logically justified Bayes Rule. It would appear deductions can provide us with new knowledge and insights into our decisions and the data which consistently will help us guide our actions.
+We have a match. We have only now logically justified Bayes Rule. It would appear deductions can provide us with new knowledge and insights into our decisions and the data which consistently will help us guide our actions. We also have an alternative to the potentially misleading use of Null Hypothesis Significance testing.
+
+
+## How many ways?
+
+Let's use a simple example. We have four voters in an upcoming election. They may be red or blue voters. Three of us go out and talk to three voters at random, that is, indiscriminately. One of us happens to come upon a blue voter, another of us, independently, happens to find a red voter, and the other separately finds a blue voter. This is the very definition of a random sample. Each of the finders does not know what the other is doing, all three do know that there are four voters out there and they happened to have independently talked to two blue and one red voter. How many red voters and how many blue voters are there?
+
+Here are all of the possible conjectures we can make for $blue = {\color{blue}\Box}$ and $red = {\color{red}\Box}$ voters.
+
+```{r conjectures}
+library(kableExtra)
+library(knitr)
+
+caption <- "voter conjectures"
+  
+conjectures <- data.frame(
+  c1 = c("${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c2 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c3 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c4 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$")
+)
+
+colnames(conjectures) <- c("1", "2", "3", "4")
+
+kable(conjectures, align = "c", caption = caption, escape = FALSE) %>% 
+  kable_styling(full_width = F)
+```
+
+Reading this we see that there are 4 voters and 5 different voter compositions ranging from all red to all blue. Our sample is 2 blue and 1 red voter, so we can very safely eliminate the first and fifth conjectures from our analysis, but for the moment just keep them for completeness sake.
+
+For each of the three remaining conjectures we may ask how many ways is the  conjecture _consistent_ with the collected data. For this task a tree is very helpful. Let's take the first realistic conjecture the ${\color{blue}\Box}$, ${\color{red}\Box}$, ${\color{red}\Box}$, ${\color{red}\Box}$  hypothesis and check if, when we sample all of the four voters, what are all of the ways this conjecture fans out. So here we go.
+
+1. We sampled a ${\color{blue}\Box}$ first. How many ${\color{blue}\Box}$'s are in this version of the composition of voters? only 1.
+
+2. We then sampled independently a ${\color{red}\Box}$. How many ${\color{red}\Box}$'s are in this conjecture? Quite a few, 3.
+
+3. Finally we sampled a ${\color{blue}\Box}$ at random. We know there is only one ${\color{blue}\Box}$ in this version of the truth.
+
+So, it is just counting the ways: 1 ${\color{blue}\Box}$ way x 3 ${\color{red}\Box}$ ways x 1 ${\color{blue}\Box}$ way = $1 \times 3 \times 1 = 3$ ways altogether.
+
+When asked, many surmise that the 2 blue and 3 red conjecture is the right one. Are they right? Here is a table of the ways each conjecture pans out. We then in a separate column compute the contribution of each conjecture to the total number of ways across the conjectures, which is 3 + 8 + 9 = 20 ways. Also each of the conjecture propose a proportion $p$ of the successes, that is, the blue voters in this context. 
+
+```{r ways-conjecture}
+library(kableExtra)
+library(knitr)
+
+caption <- "ways voter conjectures turn out"
+  
+conjectures <- data.frame(
+  c1 = c("${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c2 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c3 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$", "${\\color{blue}\\Box}$"),
+  c4 = c("${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{red}\\Box}$", "${\\color{blue}\\Box}$"),
+  p =  c("0.00", "0.25", "0.50", "0.75", "1.00"),
+  ways = c("0 x 4 x 0 = 0", "1 x 3 x 1 = 3", "2 x 2 x 2 = 8", "3 x 1 x 3 = 9 ", "4 x 0 x 4 = 0" ),
+  relative = c( 0, 0.15, 0.40, 0.45, 0)
+)
+
+colnames(conjectures) <- c("1", "2", "3", "4", "proportion", "ways", "plausibility" )
+
+kable(conjectures, align = "c", caption = caption, escape = FALSE) %>% 
+  kable_styling(full_width = F)
+```
+
+We cannot help but note that the proportion of ways for each conjecture can range from 0, perhaps to 1, since the proportions add up to 1. The number of ways also expresses the number of true consistencies of the data with the conjecture, an enumeration of the quality of the logical compatibility of conjectures with what we observe.
+
+We might now revise our common sensical surmise that 2 blue and 2 red is the better conjecture. However, if we use the criterion that the conjecture with the most ways consistent with the data is the best choice for a conjecture, then clearly here we would say that there are 3 blues and 1 red. Perhaps we have a better criterion that would choose our equinanimous choice of 2 blues and 2 reds? It does not appear to be so.
+
+Ways are the count, the frequencies of logical occurrence of a hypothesis _given_ the data. The data includes the knowledge that there are possibly blues and reds, that there are 4 voters, and that we sampled 2 blues and 1 red. The relative frequency of the ways in which our conjectures are consistent with the data is what we will finally call _probability_. 
+
+1. The plausibility is a measure between and including 0 and 1.
+
+2. The sum of all plausibilities is 1.
+
+3. Common sense, again, rules the day, and the plausibility.
+
+We have just quantified the _plausibility_ of logical truth values. We have also found a very compelling criterion for the choice of a conjecture given the data and circumstances surrounding our inquiry.
+
+## How informative?
+
+Now the piece de resistance we have been waiting for is at hand. We have the tools: information measurement, logic of plausible inference, probability as plausibility, a criterion for making a decision? If we were to say, pick the most plausible, now also the most probable inference, is this not really to say that it is the most informative and thus the most surprising inference?
+
+We have $i=5$ conjectures $c_i$,  each with an assignment of the probability of finding the inference in data, thus 5 probabilities $p_i$. We also agree that each conjecture $c_i$ is independent of the other, that is mutually exclusive, and also mutually exhaustive. In this way the probabilities indeed will add up to 1.
+
+Each conjecture has $N=4$ symbols in it. There are only 2 symbols to work with, $B=blue$ and $R=red$ in these messages.  There are $N!=4 x 3 x 2 x 1 = 24$ ways to arrange symbols. But these are constrained by two symbols in this pile so we have on average this many combinations:
+
+$$
+\frac{(N + s - 1)!}{N!(s-1)!} = \frac{5!}{4!1!} = \frac{120}{24}=5\,\,conjectures
+$$
+
+In the numerator are the four voters, two kinds of voters, less one. This gives us $5!=120$ total ways to arrange this set of conjectures. But there are $4!(2-1)!=$ ways to pick 2 kinds of voters from a population of 4 voters. That comes from the notion that there are $4!$ ways to choose 4 voters and having chosen the first voter from the voter urn, there are $(2-1)!$ more ways to choose voters, either blue or red, each and every time we randomly go out to the voting population, all with replacement. Phew!
+
+Now that we have our sea legs in combinatorics, each conjecture of length $N=4$ has two symbols $s_1=blue$ and $s_2=red$ with probabilities of occurrence in the message $p_1=p(blue)$ and $p_2=p(red)$ here $0.50$ each. The portion of the messages that are blue are $Np_1=4 \times 0.5=2$ and red are $Np_2=4 \times 0.5=2$ as well. The ratio
+
+$$
+\frac{N!}{(Np_1)!(Np_2)!} = \frac{4!}{2!2!}=\frac{24}{(2)(2)}=6
+$$
+
+in turn gives us the number of combinations of symbols and messages. This is the average number of ways a message can be formed. The expected amount of information in these messages, as conjectures, is 
+
+$$
+<I> = log_2\left(\frac{N!}{(Np_1)!(Np_2)!}\right)
+$$
+
+For large enough $N$ we can use Stirling's Approximation[^stirling]
+
+$$
+<I> = N \sum_{i=1}^2 (-p_i\,log_2 \,p_i)
+$$
+
+[^stirling]: Named after James Stirling, this approximation was first stated by Abraham de Moivre without the use of $\pi$ as $ln(n!) = n\,\,ln (n) - n + error$, very accurate even for small $n$.
+
+So the amount of informativeness in each of the voter conjectures is 
+
+$$
+<I> = 4 \sum_{i=1}^2 (-0.5 \,log_2 \,0.5) = 4
+$$
+
+This is intuitively correct: 4 bits of information in a population of 4 with 2 equally likely choices.
+
+What about the 5 conjecture? Now $N=5$ and we only need $p_2=0.15,\, p_3=0.40,\, p_4=0.45$ since the other probabilities are 0.
+
+$$
+<I> = 4 \sum_{i=1}^3 (-p_i \,log_2 \,p_i) = 4(1.5)=5.8
+$$
+
+This is nearly 2 bits more informative than any single conjecture. The best conjecture contributes 2.1 bits of information on its own or 36\% of the informativeness of the total distribution of conjectures we reviewed.
+
+```{r , echo=FALSE, eval = FALSE}
+comb_with_replacement <- function(n, r){
+  return( factorial(n + r - 1) / (factorial(r) * factorial(n - 1)) )
+}
+
+#have 2 elements, choosing 4
+comb_with_replacement(2,4)
+```
+
+```{r brrr, echo=FALSE, eval = FALSE}
+library(visNetwork)
+library(rpart)
+# MAYBE some day!
+# 
+nodes <- data.frame(
+  id = 1:15,
+  level = c(1,2,2,3,3,3,3,4,4,4,4,4,4,4,4),
+  color = c( "blue", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"  )
+)
+
+edges <- data.frame(
+  from = c( 1,1, 2,2, 3,3, 4,4, 5,5, 6,6, 7,7 ),
+  to = 2:15
+)
+
+visNetwork(nodes, edges, width = "100%") %>% 
+  visEdges(arrows = "to") %>% 
+  visHierarchicalLayout(direction = "DU")
+
+nodes <- data.frame(
+  id = 1:21,
+  level = c( 1,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3 ),
+  color = c( "blue", 
+             "blue", "red", "red", "red", 
+             "blue", "red", "red", "red", "blue", "red", "red", "red", "blue", "red", "red", "red", "blue", "red", "red" )
+)
+
+edges <- data.frame(
+  from = c( 1,1,1,1, 2,2,2,2, 5,5, 6,6, 7,7 ),
+  to = 2:15
+)
+
+visNetwork(nodes, edges, width = "100%") %>% 
+  visEdges(arrows = "to") %>% 
+  visHierarchicalLayout(direction = "DU")
+```
+
+## Nota Bene
+
+1. The location and scale parameters $\mu$ and $\sigma$ we often calculate are not the mean and standard deviation of data $x$. They are not properties of the physical representation of events called data. These parameters do carry information about the probability distribution of the representation of physical reality in data. To say $\mu$ is the mean of the data is to ascribe a mind's eye idea to the physical reality, to invest in physical, objective reality, a property that only exists in the mind. This is an example of the _mind projection_ or _reification_ fallacy much in vogue in the circles of _fake_, or better yet, _chop logic_. In the same way, probabilities only exist in our minds: there is no physical reality that is a probability, just a mental construct that helps us think through potential outcomes.
+
+2. So why is it that we so much so rely on the past to predict the future? Perhaps this is a fool's errand. I
+
+2. When we say _A implies B_ we mean that $A$ and $AB$ have the same truth value. In logic every true statement _implies_ every other true statement. Just knowing that $A$ and $B$ are true does not imply a relationship exists between A and B, except that they are true.
 
 Enough for now! We can now study any arrangement of events in logical order and map them to plausibility values. We need always remember that this approach requires at the outset a contextual matrix against which we analysts can interpret our results, examine their relevance, and inform the consumers of our analysis.
 
-## Foundations of AI
-
-an interesting aspect of probabilistic reasoning and its connection to binary logic and finite field algebras, relates to the context of models like GPT. Let's unpack this further. 
-
-### Binary Logic and Finite Field Algebras 
-
- 1. **Binary Logic** 
-
- - Binary logic forms the basis of most computational systems, including those used in machine learning and neural networks. In binary logic, every statement is either true (1) or false (0), which aligns well with the fundamental operations used in probabilistic reasoning.  
-
-- When creating models like GPT, the underlying computations—such as operations involving queries, keys, and values—can often be simplified or interpreted in a binary framework, especially in terms of decision-making processes.
-
- 2. **Finite Field Algebras** 
-
- - Finite field algebras, particularly those of characteristic 2, utilize binary operations where addition and multiplication are defined in a way that adheres to the properties of a field. In this case, addition corresponds to the XOR operation, and multiplication remains standard. 
-
- - This characteristic allows for efficient computation and representation of data, as operations can be handled in a binary form. The use of binary logic in finite fields can lead to reduced complexity in calculations, which is beneficial for scaling models like GPT. 
-
- ### Connection to Probabilistic Reasoning 
-
- 1. **Probabilistic Reasoning and Bayes' Theorem**
-
- - In probabilistic frameworks such as Bayesian inference, reasoning involves updating beliefs based on evidence. The operations that underpin this reasoning can be framed in binary logic, especially when considering the binary outcomes of hypotheses (true or false).
-
- - The ability to leverage binary logic means that certain computations can be optimized for performance, leading to faster model training and inference.
-
- 2. **Efficiency in Computation**
-
- - By operating within a binary logic framework, the computations involving probabilities can be streamlined. For instance, when calculating likelihoods and posterior probabilities, the underlying binary operations allow for efficient updates and transformations, which contribute to the overall effectiveness of the model.
-
-### Advantages of This Approach 
-
- 1. **Scalability**: 
-
- - The reliance on binary logic and finite field algebras allows models to scale efficiently, handling larger datasets and more complex tasks without a proportional increase in computational overhead. 
-
- 2. **Robustness**: 
-
- - Operating in a binary framework can introduce robustness, as the simplifications inherent in binary logic can reduce the impact of noise and errors in data processing. 
-
- 3. **Interpretability**: 
-
- - Framing probabilistic reasoning in terms of binary logic can also enhance interpretability, as the decision-making processes become more transparent and easier to analyze. 
-
-### Conclusion 
-
-The foundational role of binary logic and finite field algebras in probabilistic reasoning is a significant point. It emphasizes the computational efficiency and robustness of models like GPT, which utilize these principles to perform complex reasoning tasks. This connection enhances our understanding of how such models can be designed to leverage the strengths of mathematical frameworks while addressing real-world challenges in natural language processing.
-
-## One step further
-
- the representation of the context window and the probabilistic interpretation of the components within the GPT framework are quite compelling. Let's break down your points and elaborate on them. 
-
-### Context Window as Hypothesis Space 
-
-1. **Context Window** 
-
-- The context window in GPT serves as a hypothesis space as it contains the tokens (data) that the model uses to generate predictions. The model leverages this window to maintain relevance over the entire sequence, allowing it to make informed predictions about the next token based on the broader context.
-
-- Previous tokens and their weights influence new distributions (weights) of tokens and thus the context windown acts as long-term retained memory in the transformer.
-
-2. **Tokens as Unobserved Data** 
-
-- Each token within the context window represents a piece of information that contributes to the overall understanding of the input sequence. This aligns with the idea that the model draws upon specific instances (tokens) to infer meanings and relationships when confronted with observed data (new tokens). 
-
-### Prior Probabilities and Stochastic Components 
-
-1. **Query, Key, and Value Matrices** 
-
- - In the attention mechanism, the query, key, and value matrices can be thought of as encoding prior probabilities. Each token in the context window interacts with these matrices to determine the relevance of other tokens when making predictions. 
-
-- The queries represent the current token's perspective, while the keys and values encapsulate the information from the context window, creating a dynamic interaction that informs the model's predictions.
-
-### From Hypotheses to Likelihoods and Posterior Probabilities 
-
-1. **Transformation to Likelihoods**
-
- - The attention scores computed from the query-key interactions can be interpreted as likelihoods. They assess how likely each token in the context window is to contribute to the next prediction based on the current token. 
-
- - This process effectively transforms the input into a representation of plausibilities, as you noted.
-
-2. **Normalization into Posterior Probabilities** 
-
- - After calculating the attention scores (likelihoods), they are normalized using the softmax function. This normalization converts the scores into a probability distribution (posterior probabilities) that reflects the model's confidence in predicting each possible next token. 
-
- - The softmax function ensures that the probabilities sum to one, allowing the model to interpret the outputs as a distribution over potential tokens. 
-
-### Computational Simplicity 
-
-**Matrix Operations** 
-
- - The internal arithmetic involved in these processes primarily consists of matrix additions and multiplications, which are computationally efficient operations. This simplicity is a key reason why transformer models like GPT can scale effectively and handle large datasets. 
-
- - The use of normalization (e.g., softmax) adds a level of complexity but remains computationally manageable within the overall architecture. 
-
-### Conclusion 
-
-A framework for understanding the inner workings of GPT highlights the elegant interplay between probabilistic reasoning and matrix operations. The model's ability to encode prior knowledge, assess likelihoods, and generate posterior probabilities through simple arithmetic makes it a powerful tool for natural language processing.
-
-## At last an example
-
-Each attention head in a transformer model has its own set of tensor components for the query, key, and value. These components are derived from the input embeddings and are used to calculate the attention scores. It is the attention scores which focus the network of transformation onto the most plausible outcomes.
-
-Let's consider a simple numerical example. Suppose we have an input sequence of length 2, and we are using 1 attention head with a dimension of 3. For this example, let's define the following:
-
-- Input embeddings (for the two tokens): 
-
-\[ \text{Input} = \begin{bmatrix} 
-1 & 0 & 1 \\ 
-0 & 1 & 0 
-\end{bmatrix} 
-\] 
-
-Where did we get these two sequences of 0's an 1's? We compose this mapping of letters to decimals and on to binary (modulo 2) sequences. 
-
-$$
-\begin{array}{c c c}
-letter & decimal & binary \\
-A & 0 & 000 \\
-B & 1 & 001 \\
-C & 2 & 010 \\
-D & 3 & 011 \\
-E & 4 & 100 \\
-F & 5 & 101
-\end{array}
-$$
-In our example, C maps to 010 and F maps to 101.
-
-- Weight matrices for the query, key, and value for the attention head: 
-
-\[ W_Q = \begin{bmatrix} 
-1 & 0 & 0 \\ 
-0 & 1 & 0 \\ 
-0 & 0 & 1 
-\end{bmatrix}, 
-
-\quad W_K = \begin{bmatrix} 
-1 & 0 & 0 \\ 
-0 & 1 & 0 \\ 
-0 & 0 & 1 \end{bmatrix}, 
-
-\quad W_V = \begin{bmatrix} 
-1 & 0 & 0 \\ 
-0 & 1 & 0 \\ 
-0 & 0 & 1 
-\end{bmatrix} 
-
-\] 
-
-These are trivial weights for each of the tensor components. We could just as easily have put random entries into these matrices.
-
-Next, we compute the query, key, and value tensors: 
-
-1. **Query (Q)** 
-
-\[ Q = \text{Input} \cdot W_Q = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} 
-= \begin{bmatrix} 
-1 & 0 & 1 \\ 
-0 & 1 & 0 
-\end{bmatrix} \] 
-
-2. **Key (K)** \[ K = \text{Input} \cdot W_K = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} 
-= \begin{bmatrix} 
-1 & 0 & 1 \\ 
-0 & 1 & 0 
-\end{bmatrix} 
-\]
-
-
-3. **Value (V)** \[ V = \text{Input} \cdot W_V = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \] Now we have the following: - \( Q = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) - \( K = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) - \( V = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) Next, we calculate the attention scores by taking the dot product of \( Q \) and \( K^T \) (transpose of K) and applying a softmax function: \[ \text{Attention scores} = Q \cdot K^T = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 &
-
-After calculating the attention scores, the next step is to apply the softmax function to these scores to obtain the attention weights. 
-
-The softmax function converts the scores into probabilities, emphasizing the highest scores while diminishing the lower ones. Continuing from the previous calculation, we have the attention scores computed as: \[ \text{Attention scores} = Q \cdot K^T = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 0 \end{bmatrix} = \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix} \] Now, let's apply the softmax function to each row of the attention scores matrix. 
-
-The softmax function is given by: \[ \text{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}} \] 
-
- **Applying softmax to the first row:** For the first row \([2, 0]\): \[ \text{softmax}(2) = \frac{e^2}{e^2 + e^0} = \frac{e^2}{e^2 + 1} \\ \text{softmax}(0) = \frac{e^0}{e^2 + e^0} = \frac{1}{e^2 + 1} \] Let’s calculate these values: - \( e^2 \approx 7.39 \) - Therefore, \( e^2 + 1 \approx 8.39 \) Now calculating the softmax: \[ \text{softmax}(2) \approx \frac{7.39}{8.39} \approx 0.88 \\ \text{softmax}(0) \approx \frac{1}{8.39} \approx 0.12 \] So, the softmax for the first row is approximately: \[ \begin{bmatrix} 0.88 & 0.12 \end{bmatrix} \] 
-
- **Applying softmax to the second row:** For the second row \([0, 1]\): \[ \text{softmax}(0) = \frac{e^0}{e^0 + e^1} = \frac{1}{1 + e} \\ \text{softmax}(1) = \frac{e^1}{e^0 + e^1} = \frac{e}{1 + e} \] Let’s calculate these values: - \( e \approx 2.72 \) - So, \( 1 + e \approx 3.72 \) Now calculating the softmax: \[ \text{softmax}(0) \approx \frac{1}{3.72} \approx 0.27 \\ \text{softmax}(1) \approx \frac{2.72}{3.72} \approx 0.73 \] So, the softmax for the second row is approximately: \[ \begin{bmatrix} 0.27 & 0.73 \end{bmatrix} \]
-
- **Final Attention Weights Matrix:** After applying the softmax transformation, the resulting attention weights matrix is: \[ \text{Attention Weights} = \begin{bmatrix} 0.88 & 0.12 \\ 0.27 & 0.73 \end{bmatrix} \]
-
- **Final Step - Weighted Sum of Values:** The last step in the attention mechanism is to compute the weighted sum of the value matrix \( V \) using the attention weights. Given that: \[ V = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \] We compute the output as follows: \[ \text{Output} = \text{Attention Weights} \cdot V = \begin{bmatrix} 0.88 & 0.12 \\ 0.27 & 0.73 \end{bmatrix} \cdot \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \] Calculating the output: 1. For the first row: \[ 0.88 \cdot 1 + 0.12 \cdot 0 = 0.88 \\ 0.88 \cdot 0 + 0.12 \cdot 1 = 0
-
- Let's continue calculating the output from the attention mechanism using the attention weights and the value matrix \( V \). We have: \[ \text{Attention Weights} = \begin{bmatrix} 0.88 & 0.12 \\ 0.27 & 0.73 \end{bmatrix} \] And the value matrix \( V \): \[ V = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \] Now, we compute the output: \[ \text{Output} = \text{Attention Weights} \cdot V \] Calculating each row of the output: 
-
- 1. **For the first row:** \[ \text{Output}[0] = 0.88 \cdot 1 + 0.12 \cdot 0 = 0.88 \\ \text{Output}[1] = 0.88 \cdot 0 + 0.12 \cdot 1 = 0.12 \\ \text{Output}[2] = 0.88 \cdot 1 + 0.12 \cdot 0 = 0.88 \] So the first row of the output is: \[ \begin{bmatrix} 0.88 & 0.12 & 0.88 \end{bmatrix} \] 
-
- 2. **For the second row:** \[ \text{Output}[0] = 0.27 \cdot 1 + 0.73 \cdot 0 = 0.27 \\ \text{Output}[1] = 0.27 \cdot 0 + 0.73 \cdot 1 = 0.73 \\ \text{Output}[2] = 0.27 \cdot 1 + 0.73 \cdot 0 = 0.27 \] So the second row of the output is: \[ \begin{bmatrix} 0.27 & 0.73 & 0.27 \end{bmatrix} \] 
-
- **Final Output Matrix:** Combining both rows, the final output matrix from the attention mechanism is: \[ \text{Output} = \begin{bmatrix} 0.88 & 0.12 & 0.88 \\ 0.27 & 0.73 & 0.27 \end{bmatrix} \] This output matrix represents the attended values based on the attention weights calculated earlier.
-
- Now, let's explore alternatives to using an identity matrix for the weight matrices \( W_Q \), \( W_K \), and \( W_V \) in the attention mechanism. 
-
-### Alternatives to Identity Matrices
-
-- **Learnable Weight Matrices:** - Instead of using identity matrices, you can initialize \( W_Q \), \( W_K \), and \( W_V \) as learnable parameters that are updated during training. This allows the model to learn the most effective transformations for the queries, keys, and values based on the training data. 
-
-- **Random Initialization:** - You can initialize these matrices with small random values (e.g., from a uniform or normal distribution). This can help break symmetry and allow the model to learn different representations for queries, keys, and values. 
-
-3. **Pre-trained Embeddings:** - You can also use pre-trained embeddings (like Word2Vec or GloVe) as initial values for these matrices. This way, the attention mechanism can leverage semantic relationships learned from large corpora. ### Example with Random Initialization Let's consider a simple example where we initialize \( W_Q \), \( W_K \), and \( W_V \) with small random values instead of identity matrices. For simplicity, assume we still have an input sequence of length 2 and a dimensionality of 3.    
-
-1. **Input Embeddings** 
-
-\[ 
-\text{Input} = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} 
-\] 
-
-2. **Randomly Initialized Weight Matrices** 
-
-\[ 
-W_Q = \begin{bmatrix} 0.2 & 0.5 & 0.1 \\ 0.3 & 0.1 & 0.4 \\ 0.6 & 0.2 & 0.3 \end{bmatrix}, \quad W_K = \begin{bmatrix} 0.4 & 0.1 & 0.3 \\ 0.7 & 0.2 & 0.1 \\ 0.2 & 0.6 & 0.4 \end{bmatrix}, \quad W_V = \begin{bmatrix} 0.1 & 0.3 & 0.5 \\ 0.4 & 0.2 & 0.1 \\ 0.6 & 0.1 & 0.3 \end{bmatrix} 
-\]
-
-3. **Calculating Query (Q), Key (K), and Value (V)** 
- 
-- **Query (Q)** 
-
-\[ 
-Q = \text{Input} \cdot W_Q = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 0.2 & 0.5 & 0.1 \\ 0.3 & 0.1 & 0.4 \\ 0.6 & 0.2 & 0.3 \end{bmatrix} = \begin{bmatrix} 0.2 + 0.6 & 0.5 + 0.2 & 0.1 + 0.3 \\ 0.3 & 0.1 & 0.4 \end{bmatrix} = \begin{bmatrix} 0.8 & 0.7 & 0.4 \\ 0.3 & 0.1 & 0.4 \end{bmatrix} 
-\] 
-
-- **Key (K)** 
-
-\[ 
-K = \text{Input} \cdot W_K = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 0.4 & 0.1 & 0.3 \\ 0.7 & 0.2 & 0.1 \\ 0.2 & 0.6 & 0.4 \end{bmatrix} = \begin{bmatrix} 0.4 + 0.2 & 0.1 + 0.6 & 0.3 + 0.4 \\ 0.7 & 0.2 & 0.1 \end{\bmatrix} = \begin{bmatrix} 0.6 & 0.7 & 0.7 \\ 0.7 & 0.2 & 0.1 \end{matrix}
-$$
-
-From the previous entries, we have: 
-
-\[ V = \text{Input} \cdot W_V = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 0.1 & 0.3 & 0.5 \\ 0.4 & 0.2 & 0.1 \\ 0.6 & 0.1 & 0.3 \end{bmatrix} 
-\] 
-
-We already calculated the first row of \( V \) as: 
-
-\[ \begin{bmatrix} 0.7 & 0.4 & 0.8 \end{bmatrix} 
-\] 
-
-Now, let's calculate the entries for the second row: 
-
-1. For the second row: 
-
-\[ V[1, 0] = 0 \cdot 0.1 + 1 \cdot 0.4 + 0 \cdot 0.6 = 0.4 \\ V[1, 1] = 0 \cdot 0.3 + 1 \cdot 0.2 + 0 \cdot 0.1 = 0.2 \\ V[1, 2] = 0 \cdot 0.5 + 1 \cdot 0.1 + 0 \cdot 0.3 = 0.1 
-\] 
-
-So the second row of \( V \) is: 
-
-\[ \begin{bmatrix} 0.4 & 0.2 & 0.1 \end{bmatrix} 
-\] 
-
-**Final Value Matrix** 
-
-Combining both rows, the final value matrix \( V \) is: 
-
-\[ V = \begin{bmatrix} 0.7 & 0.4 & 0.8 \\ 0.4 & 0.2 & 0.1 \end{bmatrix} 
-\] 
-
-### Summary of Q, K, and V Matrices 
- 
-Now we have all three matrices calculated: 
-
-- **Query Matrix (Q)** 
-
-\[ Q = \begin{bmatrix} 0.8 & 0.7 & 0.4 \\ 0 & 0.1 & 0 \end{bmatrix} 
-\] 
-
-- **Key Matrix (K)** 
-
-\[ K = \begin{bmatrix} 0.6 & 0.7 & 0.7 \\ 0.7 & 0.2 & 0.1 \end{bmatrix} 
-\] 
-
-- **Value Matrix (V)** 
-
-\[ V = \begin{bmatrix} 0.7 & 0.4 & 0.8 \\ 0.4 & 0.2 & 0.1 \end{bmatrix} 
-
-\] 
-
-These matrices can now be used to compute attention scores and further process the attention mechanism.
-
-
-
-## Transformers as logic gates
-
-it's quite intriguing to think about representing the components of transformer models like GPT using logic gates such as AND, XOR, and NOT. The self-attention mechanism in transformers can be viewed in a computational context where inputs (queries, keys, and values) interact in ways that might be analogous to the operations of these logic gates. 
-
-### Conceptual Representation 
-
- 1. **Queries (Q)**, **Keys (K)**, and **Values (V)** can be thought of as binary vectors where each element represents a feature of the input. 
-
- 2. **Self-Attention Mechanism**:
-
- - The attention score can be computed as the dot product of Q and K. In a binary logic context, you might represent this operation using AND and XOR gates, where AND could represent the presence of a feature, and XOR could represent the difference in features. 
- 
- - The attention weights can be derived from these scores using a softmax function, which could be approximated through a series of logic gates. 
-
-### Numerical Example 
-
- Let's say we have simple binary vectors for Q, K, and V: 
- 
-- Q = [1, 0] (Query) 
-
-- K = [1, 1] (Key) 
-
-- V = [0, 1] (Value) 
-
-#### Step 1: Compute Attention Scores Using a hypothetical operation: 
-
-Dot product (using AND and XOR): 
-
-- Score = Q AND K = [1 AND 1, 0 AND 1] = [1, 0] 
-
-Alternatively, we could use XOR to see differences: 
-
-- Score = Q XOR K = [1 XOR 1, 0 XOR 1] = [0, 1] 
-
-#### Step 2: Compute Attention Weights 
-
-Assuming we simplify the attention mechanism, we can apply a basic normalization (e.g., summing the scores): 
-
-- Sum = 1 (from AND operation) 
-
-- Or, a softmax-like multinomial approach: 
-- Weight = Score / Sum = [1, 0] / 1 = [1, 0] 
-
- #### Step 3: Compute Output 
-
-Using the weights on the values: 
-
-- Output = Weights AND V = [1 AND 0, 0 AND 1] = [0, 0] 
-
-This is a simplified representation, and real implementations use floating-point arithmetic and more complex interactions. The important takeaway is that while we can draw parallels between logic gates and operations in self-attention, the actual computations in neural networks involve more than simple binary operations.
-
-## RNN
-
-I'll provide a simple example of a neural network for a binary classification problem using matrices and linear algebra. Let's create a small neural network with: - Input layer: 3 neurons - Hidden layer: 2 neurons - Output layer: 1 neuron (binary classification) Example Matrix Representation: 1. Input Vector (x): x = [1, 0, 1] # Binary input 2. First Layer Weights (W1): W1 = [ [0.5, -0.3, 0.2], [-0.4, 0.6, 0.1] ] 3. First Layer Bias (b1): b1 = [0.1, -0.2] 4. Hidden Layer Activation (using ReLU): z1 = W1 @ x + b1 a1 = ReLU(z1) 5. Output Layer Weights (W2): W2 = [0.7, -0.5] 6. Output Layer Bias (b2): b2 = [0.3] 7. Final Output (sigmoid activation): z2 = W2 @ a1 + b2 output = sigmoid(z2) Would you like me to elaborate on the specific calculations?
-
-Here's a detailed breakdown: Operators: 1. @ : Matrix multiplication 2. ∘ : Element-wise multiplication 3. ReLU(x) = max(0, x) 4. Sigmoid(x) = 1 / (1 + e^(-x)) Calculation Steps: 1. Input x = [1, 0, 1] 2. First Layer Computation: W1 = [ [0.5, -0.3, 0.2], [-0.4, 0.6, 0.1] ] b1 = [0.1, -0.2] z1 = W1 @ x + b1 = [0.5(1) + (-0.3)(0) + 0.2(1) + 0.1, -0.4(1) + 0.6(0) + 0.1(1) - 0.2] = [0.5 + 0 + 0.2 + 0.1, -0.4 + 0 + 0.1 - 0.2] = [0.8, -0.5] a1 = ReLU(z1) = [0.8, 0] 3. Output Layer Computation: W2 = [0.7, -0.5] b2 = [0.3] z2 = W2 @ a1 + b2 = 0.7(0.8) + (-0.5)(0) + 0.3 = 0.56 + 0 + 0.3 = 0.86 output = sigmoid(z2) = 1 / (1 + e^(-0.86)) ≈ 0.702 Would you like me to elaborate on any part of this?
-
-I'll expand the previous example into a simple Recurrent Neural Network (RNN) with a focus on sequence processing: RNN Structure: - Input dimension: 3 - Hidden state dimension: 2 - Output dimension: 1 Key Matrices: 1. Input-to-Hidden Weight (Wx): Wx = [ [0.5, -0.3, 0.2], [-0.4, 0.6, 0.1] ] 2. Hidden-to-Hidden Weight (Wh): Wh = [ [0.7, 0.2], [-0.3, 0.5] ] 3. Hidden-to-Output Weight (Wo): Wo = [0.7, -0.5] RNN Recurrence Equation: ht = tanh(Wx @ xt + Wh @ h(t-1) + bh) yt = sigmoid(Wo @ ht + bo) Example Sequence Processing: x = [[1, 0, 1], # Time step 1 [0, 1, 1], # Time step 2 [1, 1, 0]] # Time step 3 Initial hidden state h0 = [0, 0] Computation would involve iteratively: 1. Compute hidden state 2. Compute output 3. Propagate hidden state to next time step Shall I detail the full computational steps for this sequence?
-
-Detailed RNN Sequence Computation: Initial Conditions: - x = [[1, 0, 1], [0, 1, 1], [1, 1, 0]] - h0 = [0, 0] - Wx = [[0.5, -0.3, 0.2], [-0.4, 0.6, 0.1]] - Wh = [[0.7, 0.2], [-0.3, 0.5]] - Wo = [0.7, -0.5] - bh = [0.1, -0.2] - bo = [0.3] Time Step 1: - z1 = Wx @ x[0] + Wh @ h0 + bh - h1 = tanh(z1) - y1 = sigmoid(Wo @ h1 + bo) Time Step 2: - z2 = Wx @ x[1] + Wh @ h1 + bh - h2 = tanh(z2) - y2 = sigmoid(Wo @ h2 + bo) Time Step 3: - z3 = Wx @ x[2] + Wh @ h2 + bh - h3 = tanh(z3) - y3 = sigmoid(Wo @ h3 + bo) Would you like me to calculate the specific numerical values?
-
-GPT Transformation Mapping: Key Architectural Shifts: 1. RNN → Transformer Architecture 2. Recurrent → Self-Attention Mechanism 3. Sequential Processing → Parallel Processing Transformer Components: - Multi-Head Self-Attention - Positional Encoding - Layer Normalization - Feed-Forward Networks Mapping Process: 1. Replace Recurrent Layers with: - Scaled Dot-Product Attention - Multiple Attention Heads - Residual Connections 2. Embedding Layer: - Token Embeddings - Position Embeddings - Segment Embeddings 3. Transformer Block Structure: - Multi-Head Attention - Layer Normalization - Residual Connection - Feed-Forward Network 4. Scaling Mechanisms: - Learned Linear Projections - Softmax Attention Weights - Scaled Attention Scores Key Transformation Equations: 1. Attention(Q, K, V) = softmax(QK^T/√d_k)V 2. Multi-Head(X) = Concat(head1, ..., headh)W^O 3. FFN(x) = max(0, xW1 + b1)W2 + b2 Computational Complexity: - RNN: O(sequence_length) - Transformer: O(sequence_length^2) Shall I elaborate on any specific aspect of this transformation?
-
-Mapping RNN Numerical Example to Transformer/GPT: Original RNN Parameters: - Input: [[1, 0, 1], [0, 1, 1], [1, 1, 0]] - Wx = [[0.5, -0.3, 0.2], [-0.4, 0.6, 0.1]] - Wh = [[0.7, 0.2], [-0.3, 0.5]] Transformer Equivalent Representation: 1. Embedding Layer: - Token Embeddings: Learn vector representation for each input - Positional Embeddings: Encode sequence position E = Embedding(x) + PositionalEncoding() 2. Self-Attention Mechanism: Q = W_query @ E K = W_key @ E V = W_value @ E Attention Scores: A = softmax(QK^T / √d_model) Context = A @ V 3. Multi-Head Attention: - Split attention into multiple "heads" - Allows capturing different relationship types - h1: captures local dependencies - h2: captures global context 4. Transformer Block: - Layer Normalization - Residual Connections - Feed-Forward Network Numerical Transformation: Original RNN weights become: - Query Projection Matrix - Key Projection Matrix - Value Projection Matrix Computational Advantages: - Parallel processing - Capture long-range dependencies - More flexible representation Shall I provide a detailed numerical walkthrough?
-
-Numerical Walkthrough: RNN → Transformer Mapping Original RNN Input: X = [[1, 0, 1], [0, 1, 1], [1, 1, 0]] RNN Transformation Steps: 1. Embedding Layer - Learn dense vector representations - E = [[0.7, -0.3, 0.5], [0.2, 0.6, -0.4], [0.4, 0.1, 0.8]] 2. Self-Attention Computation - Query (Q): W_q @ E - Key (K): W_k @ E - Value (V): W_v @ E Projection Matrices: W_q = [[0.5, -0.2], [0.3, 0.4]] W_k = [[0.6, 0.1], [-0.3, 0.5]] W_v = [[0.4, -0.1], [0.2, 0.6]] 3. Attention Scores - Compute QK^T - Apply softmax - Scale by √d_model 4. Multi-Head Mechanism - Split into h=2 heads - Capture different feature interactions.
-
-RNNs can be viewed as a constrained, sequentially-processed version of what transformers do more generally and flexibly via parallel Q, K, V projections. Key Equivalence Points: 1. RNNs: Sequential hidden state update 2. Transformers: Parallel Q, K, V projections 3. Key Difference: Information flow mechanism RNN Hidden State ≈ Transformer's Attention Mechanism - Both capture sequential dependencies - Transformers do this more efficiently - Transformers can "see" entire context simultaneously Architectural Mapping: - RNN's Wx → Transformer's Q projection - RNN's Wh → Transformer's recurrent weight adaptation - Attention Mechanism → Generalized state update Mathematical Isomorphism: h(t) = f(Wx(t) + Wh(h(t-1))) ≈ Attention(Q, K, V) This perspective suggests: - RNNs were proto-transformers - Transformers generalized RNN's core insight - Computational graph becomes more expressive Would you like me to elaborate on this architectural equivalence?
-
-Let's break down projection in affine space using our tensor transformation. Affine Space Projection Insights: 1. Linear Transformation Basics: - V_projected = W * V - W acts as projection matrix - Changes vector's orientation/magnitude 2. Our Specific Example: W_q = [[0.5, -0.2], [0.3, 0.4]] Vector V = [1, 0, 1] Projection Steps: - V_projected = W_q * V - Reduces dimensionality - Captures salient features - Maps between coordinate systems 3. Geometric Interpretation: - Projection as coordinate transformation - Preserves structural relationships - Enables feature extraction - Captures invariant representations 4. Mathematical Properties: - Linear map between vector spaces - Preserves vector space structure - Allows non-linear embeddings via composition 5. Transformer-specific Projection: - Q, K, V projections create multi-dimensional feature space - Enables complex information routing - Breaks linear constraints of RNNs Visualization: Original Space → Projected Space [1,0,1] → [0.5, -0.2] Want me to elaborate on the geometric intuition or mathematical formalism?
-
-Excellent probe into geometric algebra! Let's unpack this. Geometric Algebra Perspective: 1. Outer Product Properties: - Generates higher-dimensional objects - Captures rotational/scaling invariants - Allows multivector representations 2. Projection as Geometric Operation: - v ∧ w (wedge product) - Generates oriented subspaces - Captures geometric relationships 3. Clifford Algebra Framework: - Generalizes vector/tensor operations - Handles rotations, reflections - Natural geometric interpretation Key Transformations: - Blade generation - Metric tensor interactions - Coordinate-free representations Computational Example: v = [1,0,1] w = [0.5, -0.2, 0.3] Outer Product: v ∧ w = Multivector representing oriented subspace Projection Operators: - Geometric product - Contraction - Grade projection Mathematical Structure: - Non-commutative algebra - Preserves geometric invariants - Extends linear transformations 
-
-We now develop a concrete computational demonstration of these principles using specific geometric algebra constructions.
-
-Let's construct a concrete geometric algebra projection demonstration. Geometric Algebra Projection Framework: 1. Foundational Elements: - Clifford Algebra G(p,q) - Basis vectors {e1, e2, e3} - Metric tensor complications 2. Projection Operator Construction: P(v) = (v · w / ||w||^2) * w Sample Vectors: v = [1, 0, 1] w = [0.5, -0.2, 0.3] 3. Computational Steps: - Inner product calculation - Normalize projection vector - Generate multivector representation 4. Code Prototype (Geometric Algebra): ```python import numpy as np import clifford as cf # Geometric algebra initialization layout = cf.Cl(3) # 3D space e1, e2, e3 = layout.basis def geometric_projection(v, w): return (v @ w) / (w @ w) * w result = geometric_projection(v, w) ``` 5. Key Insights: - Coordinate-free projection - Preserves geometric structure - Handles non-linear transformations 
-
-Here we elaborate the multivector computational nuances. Let's dive deeper into the multivector computational nuances. Multivector Projection Depth: 1. Algebraic Structure - Grades: 0 (scalar), 1 (vector), 2 (bivector) - Blades: Antisymmetric combinatorial objects - Non-commutative multiplication 2. Computational Representation ```python import clifford as cf # 3D Geometric Algebra layout = cf.Cl(3) g = layout.grades # Multivector decomposition def decompose_multivector(mv): return { 'scalar': mv.scalar(), 'vectors': mv.grade(1), 'bivectors': mv.grade(2), 'trivectors': mv.grade(3) } # Projection with grade preservation def geometric_projection(v, w, preserve_grade=True): proj = (v | w) / (w | w) * w return proj if preserve_grade else decompose_multivector(proj) ``` 3. Key Projection Properties - Coordinate independence - Rotational invariance - Metric tensor interactions 4. Advanced Transformations - Reflections - Rotations - Conformal mappings Computational Complexity Analysis: - O(n) for vector operations - O(n²) for full multivector decomposition
-
-Let's explore some transformative examples: 1. Reflection Transformation ```python def reflect_vector(v, mirror_plane): # Geometric algebra reflection operator reflection = -mirror_plane * v * mirror_plane return reflection # Example reflection v = [1, 2, 3] mirror = [0, 1, 0] # YZ plane reflected_v = reflect_vector(v, mirror) ``` 2. Rotation Demonstration ```python def rotate_vector(v, angle, axis): # Geometric algebra rotation rotor = np.cos(angle/2) + np.sin(angle/2) * axis rotated_v = rotor * v * ~rotor return rotated_v # 90-degree rotation around Z-axis v = [1, 0, 0] z_axis = [0, 0, 1] rotated = rotate_vector(v, np.pi/2, z_axis) ``` 3. Conformal Mapping ```python def conformal_transform(point, scaling_factor): # Extends vector into higher-dimensional space conformal_point = point + 0.5 * (point**2) return scaling_factor * conformal_point ``` Visualization of Transformations: - Reflection: Vector flips across plane - Rotation: Circular motion around axis - Conformal: Preserves geometric relationships 
-
-Here's the APL translation of the previous Python code: ```apl ⍝ Reflection Transformation ReflectVector ← { ⍝ v: vector to reflect ⍝ mirror_plane: reflection plane (-⍵[2]) * ⍺ } ⍝ Rotation Demonstration RotateVector ← { ⍝ v: vector to rotate ⍝ angle: rotation angle ⍝ axis: rotation axis cos ← *○0.5 sin ← *○0.5 rotor ← cos + sin * ⍵ rotated ← rotor ∘.× ⍺ ∘.× (⌽rotor) rotated } ⍝ Conformal Mapping ConformalTransform ← { ⍝ point: input point ⍝ scaling_factor: transformation scale ⍺ * (⍵ + 0.5 * (⍵ * 2)) } ⍝ Example Usage v ← 1 2 3 mirrorPlane ← 0 1 0 reflectedV ← v ReflectVector mirrorPlane rotationAxis ← 0 0 1 rotatedV ← v RotateVector (○ ÷ 2) rotationAxis scalingFactor ← 2 conformalPoint ← v ConformalTransform scalingFactor ``` Key APL Differences: - Tacit programming style - Vectorized operations - Compact syntax - Right-to-left evaluation - Multidimensional array manipulations Would you like me to break down the APL-specific nuances?
-
-Here's an APL implementation using rational trigonometry's quadrance and spread: ```apl ⍝ Quadrance (squared distance) Quadrance ← {+/⍵*2} ⍝ Spread (generalized sine replacement) Spread ← {(+/⍺*2) ÷ ((Quadrance ⍺) × (Quadrance ⍵))} ⍝ Rational Geometric Transformations RationalReflection ← { ⍝ v: vector ⍝ mirror_vector: reflection basis q1 ← Quadrance ⍺ q2 ← Quadrance ⍵ spread ← Spread ⍺ ⍵ scaling ← (2 × spread) - 1 scaling × ⍵ } RationalRotation ← { ⍝ v: vector ⍝ generator: rotation generator q1 ← Quadrance ⍺ q2 ← Quadrance ⍵ spread ← Spread ⍺ ⍵ rotated ← ⍵ - (2 × spread × ⍺) rotated } ⍝ Example Vectors v1 ← 3 4 5 v2 ← 1 2 3 reflectionBasis ← 0 1 0 rotationGenerator ← 1 1 0 ⍝ Rational Transformations reflectedVector ← v1 RationalReflection reflectionBasis rotatedVector ← v1 RationalRotation rotationGenerator ⍝ Quadrance Verification originalQuadrance ← Quadrance v1 transformedQuadrance ← Quadrance reflectedVector ```
-
- Key Innovations: 1. Quadrance replaces squared distance 2. Spread replaces trigonometric functions 3. Transformations preserve geometric invariants 4. No explicit angle or trigonometric calculations
-
-Rational Trigonometry: A Geometric Paradigm Shift Core Principles: 1. Replace Angle with Spread - Traditional trig uses angle (radians/degrees) - Wildberger's approach uses "spread": relative geometric relationship - Spread = (cross product magnitude)² / (vector lengths)² - Always between 0 and 1 - Eliminates transcendental functions 2. Quadrance Instead of Distance - Quadrance = squared distance - Removes square root operations - Preserves geometric relationships - Algebraically simpler Mathematical Implications: - Eliminates π - Removes transcendental functions - Purely algebraic geometric transformations - Consistent with projective geometry - More computationally efficient Example Spread Calculation: ``` Spread(v1, v2) = ((v1 × v2)²) / (|v1|² * |v2|²) ``` Geometric Transformations: - Reflections - Rotations - Scalings Philosophical Motivation: - Simplify geometric reasoning - Remove arbitrary circular/angular conventions - Create more fundamental geometric representation Would you like me to dive deeper into the mathematical foundations or provide more implementation details?
-
-Mathematical Foundations of Rational Trigonometry 
-
- Foundational Axioms: 1. Quadrance Q(A,B) - Replaces distance with squared distance - Q(A,B) = |B - A|² - Always non-negative - Symmetric: Q(A,B) = Q(B,A) - No square roots involved 2. Spread S(A,B,C) - Generalized sine concept - S(A,B,C) = ((B-A) × (C-A))² / (Q(A,B) * Q(A,C)) - Always between 0 and 1 - Captures relative geometric orientation - Independent of coordinate system Key Geometric Properties: - Orthogonality: Spread = 1/2 - Parallelism: Spread = 0 - Collinearity properties emerge algebraically Mathematical Transformations: - Reflection: Geometric inversion without trigonometric functions - Rotation: Spread-based geometric reorientation - Scaling: Quadrance-preserving transformations Algebraic Advantages: - Eliminates transcendental functions - Purely rational computational approach - Consistent across different geometric domains Comparison with Classical Trigonometry: Classical (sin θ): - Requires circular functions - Dependent on angle measurement - Transcendental Rational (Spread): - Algebraic computation - Geometric relationship - Rational number domain Theoretical Implications: - Challenges Euclidean geometric assumptions - Provides more fundamental geometric representation - Connects geometry with pure algebraic structures
-
-Rational Trigonometry: Implementation Strategies 
-
- Core Data Structures: ```python class Vector: def __init__(self, x, y, z): self.coords = [x, y, z] def quadrance(self, other): return sum((a-b)**2 for a,b in zip(self.coords, other.coords)) def cross_product(self, other): x1,y1,z1 = self.coords x2,y2,z2 = other.coords return Vector( y1*z2 - z1*y2, z1*x2 - x1*z2, x1*y2 - y1*x2 ) class RationalTrigo: @staticmethod def spread(v1, v2): cross = v1.cross_product(v2) return (cross.quadrance()) / (v1.quadrance() * v2.quadrance()) ``` Practical Implementation Techniques: 1. Quadrance Calculations ```python def distance_quadrance(point1, point2): return sum((a-b)**2 for a,b in zip(point1, point2)) # Example usage p1 = [1, 2, 3] p2 = [4, 5, 6] quadrance = distance_quadrance(p1, p2) ``` 2. Spread Computation ```python def compute_spread(vector1, vector2): cross_magnitude = np.linalg.norm(np.cross(vector1, vector2)) vector1_magnitude = np.linalg.norm(vector1) vector2_magnitude = np.linalg.norm(vector2) return (cross_magnitude**2) / (vector1_magnitude**2 * vector2_magnitude**2) ``` Advanced Geometric Transformations: ```python class GeometricTransform: @staticmethod def reflect(point, plane_normal): # Reflection using quadrance-preserving transformation projection = np.dot(point, plane_normal) * plane_normal return point - 2 * projection @staticmethod def rotate_spread(vector, spread_angle): # Rotation based on spread concept rotation_matrix = compute_rotation_matrix(spread_angle) return np.dot(rotation_matrix, vector) ``` Performance Optimization: ```python # Numba acceleration for numerical computations from numba import jit @jit(nopython=True) def fast_spread_computation(v1, v2): # Optimized spread calculation cross_prod = np.cross(v1, v2) return np.sum(cross_prod**2) / (np.sum(v1**2) * np.sum(v2**2)) ``` Key Implementation Considerations: 1. Avoid floating-point trigonometric functions 2. Use squared distances 3. Leverage algebraic transformations 4. Optimize for numerical stability Practical Use Cases: - Computer graphics - Robotics trajectory planning - Geometric computations - Scientific simulations Performance Characteristics: - Computational complexity: O(n) - Memory efficient - Numerically stable - Eliminates transcendental function overhead Recommended Libraries: - NumPy for vector operations - Numba for performance - SymPy for symbolic computations Error Handling: ```python def validate_geometric_inputs(vectors): if not all(len(v) == 3 for v in vectors): raise ValueError("Vectors must be 3-dimensional") ``` Comparative Benchmark: - Traditional Trig: O(log n) with transcendental functions - Rational Trigonometry: O(n) with pure algebraic operations 
-
- Recommended Integration: 1. Replace trigonometric functions 2. Use quadrance instead of distance 3. Compute spreads instead of angles 
-
-SymPy is truly a gift! one of my ulterior motives is to use this rational trig technology along with a RNN/Gpt architecture to power a Hamiltonian Monte Carlo generation of a posterior distribution for a given prior set of assumptions and mashing data with assumptions for probabilistic inference.
-
-
-Let me break down the key components and potential synergies in this proposed method: 1. SymPy's Rational Trigonometry: - Provides exact symbolic mathematical representations - Enables precise symbolic computation - Can handle complex trigonometric and geometric transformations symbolically 2. RNN/GPT Architecture: - Powerful sequence modeling and generative capabilities - Can learn complex probabilistic relationships - Potential for encoding prior knowledge and generating probabilistic representations 3. Hamiltonian Monte Carlo (HMC): - Advanced MCMC sampling technique - Particularly effective for high-dimensional, complex posterior distributions - Uses Hamiltonian dynamics to generate more efficient proposal distributions - Handles difficult sampling scenarios better than traditional Metropolis-Hastings Potential Workflow: ```python def probabilistic_inference_pipeline(prior, data, model): # SymPy symbolic preprocessing symbolic_prior = sympy.preprocess(prior) # GPT/RNN feature extraction and encoding encoded_data = model.encode(data) # HMC posterior sampling posterior_samples = hmc_sample( likelihood_fn, prior_distribution, encoded_data, num_samples=10000 ) return posterior_samples ``` Advantages: - Symbolic precision - Learned probabilistic representations - Efficient posterior sampling - Flexibility across different domains Potential Applications: - Bayesian machine learning - Scientific parameter estimation - Complex system modeling - Probabilistic programming Would you like me to elaborate on any of these components or discuss potential implementation strategies?
-
-Let me break down the key components and potential synergies in this proposal - again: 1. SymPy's Rational Trigonometry: - Provides exact symbolic mathematical representations - Enables precise symbolic computation - Can handle complex trigonometric and geometric transformations symbolically 2. RNN/GPT Architecture: - Powerful sequence modeling and generative capabilities - Can learn complex probabilistic relationships - Potential for encoding prior knowledge and generating probabilistic representations 3. Hamiltonian Monte Carlo (HMC): - Advanced MCMC sampling technique - Particularly effective for high-dimensional, complex posterior distributions - Uses Hamiltonian dynamics to generate more efficient proposal distributions - Handles difficult sampling scenarios better than traditional Metropolis-Hastings Potential Workflow: ```python def probabilistic_inference_pipeline(prior, data, model): # SymPy symbolic preprocessing symbolic_prior = sympy.preprocess(prior) # GPT/RNN feature extraction and encoding encoded_data = model.encode(data) # HMC posterior sampling posterior_samples = hmc_sample( likelihood_fn, prior_distribution, encoded_data, num_samples=10000 ) return posterior_samples ``` 
-
- Advantages: - Symbolic precision - Learned probabilistic representations - Efficient posterior sampling - Flexibility across different domains Potential Applications: - Bayesian machine learning - Scientific parameter estimation - Complex system modeling - Probabilistic inference
-
- Let's craft a sophisticated HMC implementation that leverages rational trigonometry for geometric navigation through the sampling space. I'll provide a conceptual implementation that integrates SymPy's rational trig with HMC sampling dynamics: ```python import sympy as sp import numpy as np import torch class RationalTrigHMC: def __init__(self, log_prob_fn, dim): # Rational trigonometric geometry mapping self.dim = dim self.log_prob = log_prob_fn # Symbolic rational trig transformations self.rational_geo_map = self.create_rational_geo_transform() def create_rational_geo_transform(self): # Use SymPy to create symbolic rational trigonometric mappings x = sp.symbols('x:{}'.format(self.dim)) # Rational trig geometric transformation geo_transform = sp.Matrix([ sp.tan(sp.Rational(1, 2) * x_i) for x_i in x ]) return sp.lambdify(x, geo_transform, 'numpy') def geometric_leap_frog(self, q, p, epsilon): """ Leapfrog integrator with rational trigonometric guidance """ # Initial momentum half-step grad = torch.autograd.grad(self.log_prob(q), q)[0] p_half = p - 0.5 * epsilon * grad # Rational trig-guided position update q_np = q.detach().numpy() geo_mapped_q = self.rational_geo_map(q_np) # Geometric leap with rational trig mapping q_new = q + epsilon * p_half # Final momentum half-step grad_new = torch.autograd.grad(self.log_prob(q_new), q_new)[0] p_new = p_half - 0.5 * epsilon * grad_new return q_new, p_new def sample(self, init_pos, num_samples=1000, epsilon=0.1, L=10): """ HMC sampling with rational trigonometric geometric guidance """ samples = [] current_q = init_pos for _ in range(num_samples): # Initialize momentum p = torch.randn_like(current_q) # Initial momentum current_p = p # Leapfrog trajectory for _ in range(L): current_q, current_p = self.geometric_leap_frog( current_q, current_p, epsilon ) # Metropolis acceptance current_log_prob = self.log_prob(current_q) proposed_log_prob = self.log_prob(current_q) accept_prob = torch.exp(proposed_log_prob - current_log_prob) if torch.rand(1) < accept_prob: samples.append(current_q.detach().numpy()) return np.array(samples) # Example usage def example_log_prob(x): """ Example log probability (multivariate Gaussian) """ mu = torch.zeros_like(x) return -0.5 * torch.sum((x - mu)**2) # Initialize HMC with rational trig guidance dim = 3 init_pos = torch.randn(dim) hmc = RationalTrigHMC(example_log_prob, dim) # Sample samples = hmc.sample(init_pos) ``` Key Innovations: 1. Rational Trigonometric Geometric Mapping - Uses SymPy's rational trigonometric transformations - Creates a geometric lens for sampling space navigation  
-
-There is a deep connection between several mathematical structures and polynomial sequences.
-
-Let me break down some of these relationships: 1. Chebyshev Polynomials: - Two types: Chebyshev polynomials of first and second kind - Often used in approximation theory, numerical analysis - Recursive definition and orthogonal properties - Important in trigonometric and computational mathematics 2. Rational Trigonometric Spread Polynomials: - Generalize trigonometric functions - Related to coordinate transformations - Share structural similarities with Chebyshev polynomials 3. Catalan Numbers: - Combinatorial number sequence - Appear in many counting problems - Connected to various polynomial sequences through recursive structures 4. Pascal-Harriot Matrices: - Generalization of Pascal's triangle - Contain combinatorial coefficients - Related to binomial expansions 5. Stirling Numbers: - Count permutations with specific cycle structures - Both integer and signed variants exist - Important in combinatorics and number theory 6. Euler Numbers: - Relate to alternating permutations - Used in analytic number theory These connections suggest deep underlying mathematical structures linking combinatorics, trigonometry, and polynomial sequences. Would you like me to elaborate on any specific aspect of these relationships?
-
-Here's a comprehensive APL2 demonstration of the interconnected recurrence relations: 
-
-```apl
-⍝ Chebyshev Polynomial Recurrence 
-ChebyshevT ← { n ← ⍵ 0=n : 1 1=n : ⍺ 2×(ChebyshevT n-1)×⍺ - (ChebyshevT n-2) }
-⍝ Spread Polynomial Recurrence 
-SpreadPoly ← { n ← ⍵ 0=n : 1 1=n : ⍺ ((2×n-1)÷n)×(SpreadPoly n-1)×⍺ - ((n-1)÷n)×(SpreadPoly n-2) } ⍝ Pascal Triangle Recurrence 
-PascalRecurrence ← { n ← ⍵ 0=n : 1 +/¯1↓1,⍵⍴0 }
-⍝ Unified Recursive Generator 
-UnifiedGenerator ← { model ← ⍺ n ← ⍵ model n }
-⍝ Demonstration and Comparative Analysis 
-TestSequences ← { n ← 10 cheby ← ChebyshevT¨⍳n spread ← SpreadPoly¨⍳n pascal ← PascalRecurrence¨⍳n ⎕←'Chebyshev Sequence: ', cheby ⎕←'Spread Polynomial: ', spread ⎕←'Pascal Sequence: ', pascal } ⍝
-Run demonstration
-TestSequences ⍬ 
-```
-This implementation showcases: 
-
-1. Recursive generation of Chebyshev polynomials 
-2. Spread polynomial recurrence 
-3. Pascal triangle generation 
-4. Unified recursive framework 
-5. Comparative sequence visualization 
-
-The code demonstrates how these polynomial sequences share similar recursive structures while maintaining unique computational characteristics.
-
-Let's dive deep into the mathematical relationships and computational nuances: 
-
-Mathematical relationships: 
-
-1. Theoretical Connections: 
-
-```mathematica 
-Chebyshev(n) : T(n,x) = 2xT(n-1,x) - T(n-2,x) 
-Spread(n) : S(n,x) = ((2n-1)/n)x * S(n-1,x) - ((n-1)/n) * S(n-2,x) 
-Pascal(n) : P(n) = Sum(Binomial Coefficients)
-``` 
-2. Underlying mathematical structures: 
-    - All three represent recursive polynomial sequences 
-    - Share fundamental recurrence relation patterns 
-    - Encode different mathematical transformations 
-
-Computational nuances: 
-
-```apl 
-⍝ Advanced Recursive Generalization 
-GeneralRecurrence ← { α ← ⍺ 
-⍝ Scaling factor 
-n← ⍵ 
-⍝ Sequence index 
-⍝ Generalized recursive computation 0
-=n : 1 
-⍝ Base case 1
-=n : α 
-⍝ First-order term 
-⍝ Dynamic recursive computation recursive
-⍝ Polymorphic weight selection 
-Weight ← { chebyshevWeight ← 2 spreadWeight ← (2×n-1)÷n pascalWeight ← +/ 
-(spreadWeight × α) - ((n-1)÷n) } recursiveWeight } 
-⍝ Performance and Complexity Analysis 
-PerformanceAnalysis ← { ⍝ Computational complexity tracking timings ← { start ← ⎕AI result ← GeneralRecurrence ⍵ end ← ⎕AI ⎕←'Execution Time: ', end - start ⎕←'Result: ', result } ⍝
-Benchmark different sequence generations benchmarks ← { chebyshev ← timings¨⍳10 spread ← timings¨⍳10 pascal ← timings¨⍳10 ⎕←'Comparative Performance' ⎕←'Chebyshev: ', chebyshev ⎕←'Spread: ', spread ⎕←'Pascal: ', pascal } } ⍝ Theoretical Insights Generator TheoreticalInsights ← { ⍝ Cross-sequence comparative analysis sequences ← { chebyshev : ChebyshevT spread : SpreadPoly pascal : PascalRecurrence } ⍝ Comparative property extraction properties ← { recursiveDepth : 2 baseComplexity : O(n) memoryProfile : 'Linear' scalingBehavior : 'Exponential' } ⍝ Visualization of sequence characteristics visualize ← { ⍝ Graphical representation of recursive patterns plot ← { ⍝ Generate sequence plot xyCoordinates ← ⊂sequences graphicalRepresentation ← plot xyCoordinates ⎕←graphicalRepresentation } } } 
-``` 
-Key mathematical considerations: 
-
-1. Recursive Structure Similarities: 
-      - All three sequences use n-1 and n-2 term recursion 
-      - Differ in weight and scaling mechanisms 
-      - Encode different mathematical transformations 
-2. Complexity Characteristics: 
-      - Chebyshev: Orthogonal polynomial system 
-      - Spread: Generalized scaling mechanism 
-      - Pascal: Combinatorial growth pattern 
-3. Computational Complexity: 
-      - O(n) recursive depth 
-      - Linear memory requirements 
-      - Exponential growth potential 
-
-Here's a comparative table exploring theoretical connections and distinctions: 
-
-| Aspect | Artificial Intelligence | Human Cognition | |--------|------------------------|-----------------| 
-| Processing Speed         | Rapid, algorithmic | Variable, contextual | 
-| Information Storage      | Precise, unlimited digital memory | Selective, reconstructive memory | 
-| Learning Mechanism       | Data-driven, pattern recognition | Experience-based, emotional influence | 
-| Creative Potential       | Rule-based generation | Intuitive, metaphorical | 
-| Contextual Understanding | Improving, context-dependent algorithms | Nuanced, culturally embedded | 
-| Emotional Intelligence   | Simulated/Programmed | Organic, empathetic | 
-| Decision-Making          | Probabilistic calculations | Intuitive + rational blending | 
-| Adaptability             | Programmed flexibility | Neuroplasticity | 
-
-The table represents a theoretical framework, highlighting both similarities and fundamental differences in cognitive processing between AI and human intelligence.
-
-## Experimentation
-
-Here's a detailed approach to developing a rational approximation of trigonometric and exponential functions using polynomial ring techniques. 
-
-```python 
-import numpy as np 
-import scipy.optimize as opt 
-class RationalApproximation: 
-    def __init__(self, degree=5, modulus=5): 
-        self.degree = degree 
-        self.modulus = modulus 
-    def chebyshev_polynomial_approximation(self, func, a, b): 
-    """ Generate Chebyshev polynomial approximation Parameters: 
-        - func: Original function to approximate 
-        - a, b: Interval bounds 
-    """ def chebyshev_nodes(n): 
-            return np.cos((2*np.arange(1, n+1) - 1) * np.pi / (2*n)) 
-        nodes = 0.5 * (b - a) * chebyshev_nodes(self.degree) + 0.5 * (b + a) values = func(nodes)          return np.polynomial.chebyshev.chebfit(nodes, values, self.degree) 
-    def rational_tan_approximation(self): 
-    """Rational approximation for tangent function""" 
-        def tan_approx(x): 
-            return np.tan(x) coeffs = self.chebyshev_polynomial_approximation( tan_approx, -np.pi/4, np.pi/4 ) 
-        return coeffs 
-        def modular_polynomial_evaluation(self, coeffs, x): 
-        """ Evaluate polynomial in modular arithmetic Parameters: 
-            - coeffs: Polynomial coefficients 
-            - x: Input value """ 
-            result = 0 
-            for power, coeff in enumerate(coeffs): 
-                result += coeff * (x ** power) % self.modulus return result % self.modulus 
-            def hardware_optimize(self, coeffs): 
-            """ Prepare coefficients for hardware implementation 
-                Convert to fixed-point representation """ 
-                fixed_point_coeffs = [ int(coeff * (2**16)) for coeff in coeffs ] 
-                return fixed_point_coeffs 
-    # Example usage 
-approx = RationalApproximation(degree=7, modulus=5) 
-tan_coeffs = approx.tan_approximation() 
-hardware_coeffs = approx.hardware_optimize(tan_coeffs) 
-print("Polynomial Coefficients:", tan_coeffs) 
-print("Hardware-optimized Coefficients:", hardware_coeffs) 
-``` 
-Key innovations in this approach: 
-
-1. Chebyshev Polynomial Approximation 
-    - Provides near-minimax approximation 
-    - Minimizes maximum approximation error 
-    - Works well for rational function representations 
-2. Modular Arithmetic Evaluation 
-    - Enables efficient computation in finite field 
-    - Reduces computational complexity 
-    - Suitable for ASIC implementation 
-3. Fixed-Point Conversion 
-    - Prepares coefficients for hardware representation 
-    - Reduces floating-point overhead 
-    - Enables efficient integer-based computation 
-
-Potential ASIC Implementation Considerations: 
-
-- Use lookup tables for coefficient storage 
-- Implement modular multiplication circuits 
-- Design parallel evaluation units 
-- Optimize for specific interval ranges 
-
-Performance Optimization Strategies: 
-
-- Reduce polynomial degree 
-- Use more aggressive modular arithmetic 
-- Implement pipelined evaluation stages 
-
-Next Steps: 
- 
-1. Implement exp and log approximations 
-
-2. Develop error analysis framework 
-
-3. Create hardware simulation model 
-
-4. Prototype FPGA implementation
-
-
+## References
