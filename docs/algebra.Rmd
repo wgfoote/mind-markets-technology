@@ -5,11 +5,11 @@ date: "`r Sys.Date()`"
 bibliography: algebra.bib
 header-includes:
    - \usepackage{polynom}
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, eval=TRUE)
 ```
 
 ## Why this essay
@@ -28,7 +28,7 @@ Our judgments are true is easier if we follow Aristotle's formula in his Metaphy
 
 Valid reasoning is even easier as this layer is all about arguments. An argument (terms in propositions, propositions in premises, reasoning in conclusions) is valid only when clear terms, true prepositions in premises, and the conclusion necessarily follows from the premises. As simple as this is, if terms are not well-defined, and/or propositions are not clearly true (or false), then an arguments are not valid. Even if terms are well-defined and unambiguous, propositions are clearly true or false, arguments are not valid if the conclusion follows a line of reason not supported by clear premises and unambiguous terms. Finally, and here we actually get practical, even if the line of reasoning formally is supported by clearly understood premises, an argument is not valid in the field of observable reality if the conclusion makes no sense, common or otherwise.
 
-Let's use cats and gods in Peter @
+Let's use the cats and gods from the example in Peter @kreeft2005socratic (32).
 
 $$
 \begin{array}{r | c}
@@ -39,9 +39,33 @@ $$
 \end{array}
 $$
 
+This argument makes mathematical sense in a way we will later demonstrate. If the premises are true, then we have a logically valid argument since the conclusion follows necessarily (meaning, always true, happens all the time everywhere) from the premises. And we will say mathematically true since, we will show, symbolically the logic robot we will build will always return a true value for the conclusion. But this is common non-sense! I am not a cat, and even if I were to be a cat with whiskers, talons, teeth, and a pretty furry face, I could not be a god no matter how hard I try! So, the premises are not possibly true in this reality we wake up to each day, and the argument fails, augers into the ground, burns down.
 
+There exists right across from the typewriter producing a this text a cat named Waffles (ginger, about 17 years old, or so we think and he's asleep, again so we think). There exist other animals called dogs, and we know very well they are quite different beasts. Yes, we allow ourselves the luxury of begin able to abstract from individuals to existential groups of similar individuals, a pillar of the scientific method. We will now use this same logical argument, its structure, to inquire about Waffles.
 
+$$
+\begin{array}{r | c}
+\text{cats and dogs}                 &                 \\ \hline  
+\text{A: if Waffles is a cat, then B: Waffles is not a dog} & A \rightarrow B \\
+\text{but, A: Waffles is a cat}                    & A               \\ \hline
+\text{therefore, B: Waffles is not a dog}         & \therefore B
+\end{array}
+$$
 
+We have unambiguous terms, Waffles, cat, dog; true propositions; straight line of reasoning from true propositions to a necessary conclusion. We have a logically valid argument, which definitely makes sense in some way to Waffles.
+
+Here is an example of a logically invalid argument.
+
+$$
+\begin{array}{r | c}
+\text{cats and dogs}                 &                 \\ \hline  
+\text{A: if Waffles is a cat, then B: Waffles is not a dog} & A \rightarrow B \\
+\text{but, A: Waffles is not a dog}                    & A               \\ \hline
+\text{therefore, B: Waffles is a cat}         & \therefore B
+\end{array}
+$$
+
+What we might not know is that there is also a hamster across the room also named Waffles. Hamster-Waffles is miffed at the suggestion that she is a cat. An now that we have a tad of clarity about validity, we can embark on a principled approach to a logic of probabilistic inference. This entails some further thought about inference in a setting with observed data and (un)observed conjectures about data. Our question is there, and if there is, how might we characterize the truthfulness of arguments in the face of sampling data relevant to the problem at hand. To do this we need to clarify further two approaches to probabilistic inference.
 
 ## Two schools of thought
 
@@ -59,7 +83,7 @@ In what follows we develop together an algebraic approach to studying inference 
 
 ## Rules
 
-Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
+We clarify our approach with rules learnt from basic arithmetic. Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$. These values are the terms and the propositions themselves, not to mention the possible outcomes of sequences of propositions we would call an argument. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
 
 $$
 \begin{array}{c | c c}
@@ -69,9 +93,9 @@ $$
 \end{array}
 $$
 
-Addition with boolean values $\{0,1\}$ is the same as that of the logical exclusive OR operations, XOR. Since each element equals its opposite, subtraction is thus the same operation as addition, so that $0-0=0$,  $0-1=1$ (remembering the clock with just two settings!), $1-0=1$, and $1-1=0$, anyway, all equivalent to the $+$ rules.
+Addition with boolean values $\{0,1\}$ is the same as that of the logical exclusive OR operations, XOR. Since each element equals its opposite, subtraction is thus the same operation as addition, so that $0-0=0$,  $0-1=1$ (remembering the clock with just two settings!), $1-0=1$, and $1-1=0$, anyway, all equivalent to the $+$ rules. In words, it is **one or the other, not both**.
 
-The multiplication is multiplication modulo 2 (see the table below), and on boolean variables corresponds to the logical AND operation.
+The multiplication is multiplication modulo 2 (see the table below), and on boolean variables corresponds to the logical AND operation. Here is the **both** proposition with two terms.
 
 $$
 \begin{array}{c | c c}
@@ -91,7 +115,7 @@ $$
 \end{array}
 $$
 
-With these three operations we can evaluate any logical statement. And we must remember that NOT is not the subtraction operation we are very familiar with from non-binary algebra. 
+With these three operations we can evaluate any logical statement. And we must remember that NOT is not the subtraction operation we are very familiar with from non-binary algebra. Some folks will write $\overline x$ instead of $\neg$. 
 
 Here is a table of several useful expressions based on AND, XOR, and NOT. For any two propositions $x$ and $y$ whose values can only take on a 0 or 1, so that when $x=0$, we mean $x$ is false, otherwise (that is, $x=1) true.^[Boole has the negation of x as 1-x. We follow @carnielli2015method 1+x, given that all subtractions end up being addition in mod 2 arithmetic.]
 
@@ -162,6 +186,7 @@ statement & reason \\
 \hline
 \end{array}
 $$
+
 Simply negating (using 1+) the Form A definition reveals a conditional relationship between $a$ and $b$. Saying that $a$ AND $not-b$ is possible when we negate the Form A requirement, means $a$ does share something with $b$. So-called "implication" means that a shares a's information with b. This is the primary meaning we ascribe to "a conditions b", $b \mid a$. We now have all the ingredients to use this framework to discover a principled path to the expectations approach to probability, that is, counting the ways in which data are consistent with hypotheses. But before we enter that particular room, we need to argue a bit more, that is, discover valid and invalid logical arguments.
 
 ## Making a valid point
@@ -462,7 +487,7 @@ We have just also unveiled the vaunted product rule of probability. We have but 
 
 ## Torturing Data with Hypotheses
 
-So line 5 of our conditional event proof is true. By desiderata 1,namely, "plausibilities can be ordered as rational numbers," we assign numbers to logical expressions which in turn represent events. For comparison purposes across wildly disparate events, plausibility scores will lie between 0 and 1 such that, for a mapping $P(x)$ of plausibility of the truth of a logical expression $x$ to the interval of rational numbers (and approximations of so-called irrational numbers) between 0 and 1 inclusive, we have for rational number $0< r \leq 1$
+So line 5 of our conditional event proof is true. By desiderata 1, namely, that plausibilities can be ordered as rational numbers, we assign numbers to logical expressions which in turn represent events. For comparison purposes across wildly disparate events, plausibility scores will lie between 0 and 1 such that, for a mapping $P(x)$ of plausibility of the truth of a logical expression $x$ to the interval of rational numbers (and approximations of so-called irrational numbers) between 0 and 1 inclusive, we have for rational number $0< r \leq 1$
 
 $$
 P(x) = \begin{cases}
@@ -511,11 +536,24 @@ We have a match. We have only now logically justified Bayes Rule. It would appea
 
 ## How many ways?
 
+We began this whole discussion with the two schools of thought proposed by @cox1946probability. Here we implement the school of thought which states that inference is all about the expectation of an outcome. We condition the expectation with observed data and (un)observed hypotheses relevant to the question which gives rise to the inference. We then implement the computation of an expectation by simply counting the ways in which the expectation (data and hypotheses conditions) can occur. We effectively answer a question for reflection, of inference,that is, the question "whether it is?", with the frequency (the count) of the number of ways data are consistent with hypotheses. In this way we release ourselves both from the tyrannies of data alone and hypotheses alone. In a very realistic sense we have bridged the polar gaps, pun intended, of pure empiricism ( _sola data_ ) and pure idealism ( _sola hypotheses_ ).
+
 Let's use a simple example. We have four voters in an upcoming election. They may be red or blue voters. Three of us go out and talk to three voters at random, that is, indiscriminately. One of us happens to come upon a blue voter, another of us, independently, happens to find a red voter, and the other separately finds a blue voter. This is the very definition of a random sample. Each of the finders does not know what the other is doing, all three do know that there are four voters out there and they happened to have independently talked to two blue and one red voter. How many red voters and how many blue voters are there?
 
 Here are all of the possible conjectures we can make for $blue = {\color{blue}\Box}$ and $red = {\color{red}\Box}$ voters.
 
-```{r conjectures}
+$$
+\begin{array}{c | c c c c }
+hypotheses & 1 & 2 & 3 & 4 \\ \hline
+1 & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box} \\
+2 & {\color{red}\Box} & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box} \\
+3 & {\color{red}\Box} & {\color{red}\Box} & {\color{blue}\Box} & {\color{blue}\Box} \\
+4 & {\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box} & {\color{blue}\Box} \\
+5 &{\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box}
+\end{array}
+$$
+
+```{r conjectures, echo=FALSE, eval=FALSE}
 library(kableExtra)
 library(knitr)
 
@@ -534,7 +572,7 @@ kable(conjectures, align = "c", caption = caption, escape = FALSE) %>%
   kable_styling(full_width = F)
 ```
 
-Reading this we see that there are 4 voters and 5 different voter compositions ranging from all red to all blue. Our sample is 2 blue and 1 red voter, so we can very safely eliminate the first and fifth conjectures from our analysis, but for the moment just keep them for completeness sake.
+Reading this we see that there are 4 voters, which we can call ways the voters are arranged, and 5 different voter compositions ranging from all red to all blue, each of which we call a hypothesis. Our sample is 2 blue voters and 1 red voter, so we can very safely eliminate the first and fifth conjectures from our analysis, but for the moment just keep them for completeness sake.
 
 For each of the three remaining conjectures we may ask how many ways is the  conjecture _consistent_ with the collected data. For this task a tree is very helpful. Let's take the first realistic conjecture the ${\color{blue}\Box}$, ${\color{red}\Box}$, ${\color{red}\Box}$, ${\color{red}\Box}$  hypothesis and check if, when we sample all of the four voters, what are all of the ways this conjecture fans out. So here we go.
 
@@ -546,9 +584,22 @@ For each of the three remaining conjectures we may ask how many ways is the  con
 
 So, it is just counting the ways: 1 ${\color{blue}\Box}$ way x 3 ${\color{red}\Box}$ ways x 1 ${\color{blue}\Box}$ way = $1 \times 3 \times 1 = 3$ ways altogether.
 
-When asked, many surmise that the 2 blue and 3 red conjecture is the right one. Are they right? Here is a table of the ways each conjecture pans out. We then in a separate column compute the contribution of each conjecture to the total number of ways across the conjectures, which is 3 + 8 + 9 = 20 ways. Also each of the conjecture propose a proportion $p$ of the successes, that is, the blue voters in this context. 
+When asked, many surmise that the 2 blue and 3 red conjecture is the right one. Are they right? Here is a table of the ways each conjecture pans out. We then in a separate column compute the contribution of each conjecture to the total number of ways across the conjectures, which is 3 + 8 + 9 = 20 ways. Also each of the conjecture propose a proportion $p$ of the successes, that is, the blue voters in this context.
 
-```{r ways-conjecture}
+$$
+\begin{array}{c | c c c c | c | c }
+\hline
+\text{h} & 1 & 2 & 3 & 4 & \text{ways: }2 \, {\color{blue}\Box}\, 1 \, {\color{red}\Box} & \text{relative ways} \\ \hline
+1 & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box} & 0 \times 4 \times 0 = 0 & 0.00 \\
+2 & {\color{red}\Box} & {\color{blue}\Box} & {\color{blue}\Box} & {\color{blue}\Box}  & 1 \times 3 \times 1 = 3 & 0.15 \\
+3 & {\color{red}\Box} & {\color{red}\Box} & {\color{blue}\Box} & {\color{blue}\Box}   & 2 \times 2 \times 2 = 8 & 0.40 \\
+4 & {\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box} & {\color{blue}\Box}    & 3 \times 1 \times 3 = 9 & 0.45 \\
+5 &{\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box} & {\color{red}\Box}      & 0 \times 4 \times 0 = 0 & 0.00 \\
+\hline
+\end{array}
+$$
+
+```{r ways-conjecture, echo=FALSE, eval=FALSE}
 library(kableExtra)
 library(knitr)
 
@@ -681,14 +732,16 @@ visNetwork(nodes, edges, width = "100%") %>%
   visHierarchicalLayout(direction = "DU")
 ```
 
-## Nota Bene
 
-1. The location and scale parameters $\mu$ and $\sigma$ we often calculate are not the mean and standard deviation of data $x$. They are not properties of the physical representation of events called data. These parameters do carry information about the probability distribution of the representation of physical reality in data. To say $\mu$ is the mean of the data is to ascribe a mind's eye idea to the physical reality, to invest in physical, objective reality, a property that only exists in the mind. This is an example of the _mind projection_ or _reification_ fallacy much in vogue in the circles of _fake_, or better yet, _chop logic_. In the same way, probabilities only exist in our minds: there is no physical reality that is a probability, just a mental construct that helps us think through potential outcomes.
 
-2. So why is it that we so much so rely on the past to predict the future? Perhaps this is a fool's errand. I
+## Further thoughts
 
-2. When we say _A implies B_ we mean that $A$ and $AB$ have the same truth value. In logic every true statement _implies_ every other true statement. Just knowing that $A$ and $B$ are true does not imply a relationship exists between A and B, except that they are true.
+1. The location and scale parameters $\mu$ and $\sigma$ we often calculate are not the mean and standard deviation of data $x$ in the expectations school of thought. They are not properties of the physical representation of events called data. These parameters do carry information about the probability distribution of the representation of physical reality in data. To say $\mu$ is the mean of the data is to ascribe a mind's eye idea to the physical reality, to invest in physical, objective reality, a property that only exists in the mind. This is an example of the _mind projection_ or _reification_ fallacy much in vogue in the circles of _fake_, or better yet, _chop logic_. In the same way, probabilities only exist in our minds: there is no physical reality that is a probability, just a mental construct that helps us think through potential outcomes abstracting similar and dissimilar properties as we observe from data.
 
-Enough for now! We can now study any arrangement of events in logical order and map them to plausibility values. We need always remember that this approach requires at the outset a contextual matrix against which we analysts can interpret our results, examine their relevance, and inform the consumers of our analysis.
+2. When we say _A implies B_ we mean that $A$ and $AB$ have the same truth value. In logic every true statement _implies_ every other true statement. Just knowing that $A$ and $B$ are true does not imply a relationship exists between A and B, except that the propositions are true.
+
+## In the end
+
+We can now study any arrangement of events in logical order and map them to plausibility values. The mapping, the logical order, the propositional space we have constructed from first principles all ground our notion and implementation of forming consistent, relevant, and necessary consistencies between what we expect and what we observe. Along the way we discovered a method, perhaps we can call this a technique, to satisfy our desire to determine the existence, and degree, of truthfulness of any set of propositions, encapsulating terms, and manifesting in an argument. We pulled together basic inferential structures and applied these to a first look at hypothesis testing, dialectical reasoning, and Bayesian inference. We need always remember that this approach requires at the outset a contextual matrix against which we analysts can interpret our results, examine their relevance, and inform the consumers of our analysis.
 
 ## References
