@@ -1,11 +1,11 @@
 ---
-title: "An Algebra of Probability as Binary Logic"
+title: "An Algebra of Probability as Binary Logic: A Framework for Bayesian Decision Analytics"
 author: "Bill Foote"
 date: "`r Sys.Date()`"
 bibliography: algebra.bib
 header-includes:
    - \usepackage{polynom}
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +18,7 @@ The end we seek here is to discover a principled way to determine the validity, 
 
 Why do we need a principled way to determine the validity of sequences of our statements? We will maintain a hypothesis we might call a canon of rationality. This canon will hold throughout all of our proceedings here. In a nutshell we will place the practice and science of logic in the only context we know, namely, ourselves. We are not machines or animals or plants or rocks, although we have aspects and attributes of each. We do however ask questions, rocks, plants, animals, machines (not even Artificial Intelligence) raises questions from experience, understanding, judgment, and decision. Yes, some machines may, if we switch them on, may have been programmed by a human to prompt strings of morphemes, terms, propositions, even arguments which have the same attributes as questions a human would ask. But of themselves, machines do not, on their own volition, prompt anything. Machines do not have a will. Machines can also be programmed to store information, instructions, and adapt responses to evolving instructions, They can also in that capacity write their own instructions, build and deploy, if programmed to, their own data bases and applications, and with great agility, even exceeding their human makers. Even a hammer exceeds human ability to break rocks which would otherwise break human hands if hands tried to break rocks. A technology, actually a technique, strictly, we will develop is an implementation of logic through the use of the rules of algebra. It is in this context that we need to situate our evolving technology of implementing ways to reason, judge, understand, the three common sense acts of the mind. Each of these acts of consciousness are quite necessarily experienced, observed, perhaps remembered and stored. Thus whenever we inquire about anything in our world, we generate data of what we observe, data of understanding, data of judging, and data of reasoning. We will call this polymorphic (many shaped) consciousness.
 
-What is logic, still and up to this point using the procedure from high school algebra of "let X (logic) be an unknown variable for which we are seeking a solution"? We can begin through the practice logic, or what we might consider logical structures, by thinking about and through our reality. Thus using our thinking structures informed by our truly polymorphic human consciousness we can define logic. Through understanding we answer the question "what is it?". Within this question are the numerous questions of "what is it composed of?", questions of our experience of whatever it about which we inquire. By judgment we determine answers to the question "whether it is so?". By reason we mean finding valid conclusions which answer the question "why is it so?".  Logic is the art and science of answering these questions. To enhance our understanding ("what is logic?") we can contrast logic with ethics which answers the question "what should we do about it?".
+What is logic, still and up to this point using the procedure from high school algebra of "let X (logic) be an unknown variable for which we are seeking a solution"? We can begin through the practice of logic, or what we might consider logical structures, by thinking about and through our reality. Thus using our thinking structures informed by our truly polymorphic human consciousness we can define logic. Through understanding we answer the question "what is it?". Within this question are the numerous questions of "what is it composed of?", questions of our experience of whatever it about which we inquire. By judgment we determine answers to the question "whether it is so?". By reason we mean finding valid conclusions which answer the question "why is it so?".  Logic is the art and science of answering these questions. To enhance our understanding ("what is logic?") we can contrast logic with ethics which answers the question "what should we do about it?".
 
 We can go one step further. Through each of these questions we can ferret out typical answers. To the questions for understanding, "what is it?", we can propose two answers about the clarity of our understanding (going binary on us right now): "it is clear what it is," or "it is not clear what it is." Similarly we can propose two answers to questions of judgment, "whether it is or not": "is it true," or "it is not true." Lastly, in the field of inquiry called logic, we can propose two answers about the validity of our reasoning: "it is valid," or "it is not valid." We must immediately realize we have mutually exclusive, and again in the realm of a particular inquiry, completely exhaustive answers, all with exclusive "or," that is, disjunctive. If we add up all the trues and all the falses we get all of the answers to all of the questions for judgment. So we suppose now we need some clarification about what we mean by clear, true, and valid.
 
@@ -65,7 +65,7 @@ $$
 \end{array}
 $$
 
-What we might not know is that there is also a hamster across the room also named Waffles. Hamster-Waffles is miffed at the suggestion that she is a cat. An now that we have a tad of clarity about validity, we can embark on a principled approach to a logic of probabilistic inference. This entails some further thought about inference in a setting with observed data and (un)observed conjectures about data. Our question is there, and if there is, how might we characterize the truthfulness of arguments in the face of sampling data relevant to the problem at hand. To do this we need to clarify further two approaches to probabilistic inference.
+What we might not know is that there is also a hamster across the room also named Waffles. Hamster-Waffles is miffed at the suggestion that she is a cat. And now that we have a tad of clarity about validity, we can embark on a principled approach to a logic of probabilistic inference. This entails some further thought about inference in a setting with observed data and (un)observed conjectures about data. Our question is locatrred right there, and if there is a "right there," how might we characterize the truthfulness of arguments in the face of sampling data relevant to the problem at hand. To do this we need to clarify further two approaches to probabilistic inference.
 
 ## Two schools of thought
 
@@ -79,11 +79,11 @@ The expectation school's results build on an algebra of the logic of proposition
 
 Here we will blithely consider propositions and their subject to at least probably exist so as to be able to discuss them with respect to the very real actions we undertake upon deliberation, reflection, and understanding of our conscious experience and held beliefs.
 
-In what follows we develop together an algebraic approach to studying inference introduced by @boole1848calculus and expanded upon by @peirce1870description, @keynes2013treatise, @jaynes2003probability, and more recently @suleimenov2023improving. The logical system here relies on four fundamental logical forms developed by @aristotle2009prior and as explicated in practical logic by @kreeft2005socratic and  @toulmin2003uses. Far deeper than this discussion, but notable in grounding these techniques is @carnielli2015method.
+In what follows we develop together an algebraic approach to studying inference introduced by @boole1848calculus and expanded upon by @peirce1870description, @keynes2013treatise, @jaynes2003probability, and more recently @suleimenov2023improving. The logical system here relies on four fundamental logical forms developed by @aristotle2009prior and as explicated in practical logic by @kreeft2005socratic and  @toulmin2003uses. Far deeper than this discussion, but notable in grounding these techniques is @carnielli2015method. From there we would move into the realm of non-distributive and still-reflexive logic which extends Boolean and Peircean classical logic to the possibilities of a quantum-infused logic (@heelan1970quantum-logic), but we will push this extension into an separate discussion. 
 
 ## Rules
 
-We clarify our approach with rules learnt from basic arithmetic. Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$. These values are the terms and the propositions themselves, not to mention the possible outcomes of sequences of propositions we would call an argument. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
+We clarify our approach with rules learnt from basic arithmetic. Addition is defined as addition of integers, but restricted to modulo 2, with only two possible values $\{0,1\}$.^[@burris2021SEP-algebra-logic-tradition develops a sweeping history of the progress, decline, and revitalization of algebraic logic. @burris2013horn augment Boole's algebraic logic with a Rule of 0 and 1 founded on Horn sentences. This is significant because of the hermeneutical anti-compositional principle of building up an understanding of reasoned arguments from its propositional elements and in turn from terms. We take into account the argument as a whole and the reciprocal interaction of the whole argument with its components.] These values are the terms and the propositions themselves, not to mention the possible outcomes of sequences of propositions we would call an argument. If we remember our basic maths and modulo arithmetic as a clock, the hands on this clock can sit at 0 or 1. If the hand is at 1 and we add 1 to this setting we end up at, yes, 0. A regular OR in many languages would often mean and/or, an inclusive OR, an either one or the other or both. The XOR excludes any possibility in common between two propositions. Propositions are mutually exclusive of one another. Here is a table to help us. 
 
 $$
 \begin{array}{c | c c}
@@ -353,7 +353,11 @@ That is, the _horns of the dilemma_, is what we ride on. We have dilemmas when w
 
 - **Option overload or aversion?** In this dilemma when presented with only a single option, really no option except the status quo, people may be unlikely to buy, even if it's an option they like, thus aversion. On the other hand, given too many, and possibly the double-barrel of too complex, options, can lead to _analysis paralysis_, no choice, and reliance, again, on the status quo.
 
-All of the work we have done to help us relate various propositions, even test their validity and coherence, pull together the essential components of _dialectical reasoning_. In what follows we will build _constructive_ (negative propositions not allowed), and _destructive_, (many, even double negatives abound to confuse coherence). These arguments will be _simple_ (one consequent allowed) or (exclusive or) _complex_ (more than one consequent allowed). We will construct a propositional logic table first, then translate to our algebraic formulation. $\$
+All of the work we have done to help us relate various propositions, even test their validity and coherence, pull together the essential components of _dialectical reasoning_. In what follows we will build _constructive_ (negative propositions not allowed), and _destructive_, (many, even double negatives abound to confuse coherence). These arguments will be _simple_ (one consequent allowed) or (exclusive or) _complex_ (more than one consequent allowed). We will construct a propositional logic table first, then translate to our algebraic formulation.
+
+### Dialectical Algebra
+
+Using the tools of our propositional logical algebra we can cast the logical space of dialectic like so. First, let's use the standard symbols for those who like to begin from this point of view.
 
 $$
 \begin{array}{|c | c | c |} \hline
@@ -366,6 +370,7 @@ constructive          & \therefore q & \therefore q \lor s \\ \hline
 destructive  & \therefore \neg p & \therefore \neg p \lor \neg r \\ \hline
 \end{array}
 $$
+Next, we cast the logical symbology into something our computer and our ninth-grade algebra student might recognize.
 
 $$
 \begin{array}{|c | c | c |} \hline
@@ -389,7 +394,8 @@ To illustrate our analysis of the logic, and import, of the _simple-constructive
 
 - [_THEREFORE_ _q_: "I certainly exist."]
 
-We know we can translate these propositions, this argument, into our algebraic 
+We know we can translate these propositions, this argument, into our algebraic solution structure just like this.
+
 $$
 \begin{array}{r l}
 \,(p \,\, \text{IMPLIES} \,\, q) \,\, \text{AND} \,\, (r \,\, \text{IMPLIES} \,\, q)  & \text{[simple-constructive]}\\
@@ -403,15 +409,13 @@ pq+rq &\text{IMPLIES}\,\, q \\
 &= 1
 \end{array}
 $$
-Well worth the effort. All of the top-side propositions: both the two implications (conditionals) and the disjuction boil down to $(p+r)q = (p\lor r)\land q$. In words (and remembering we are using the exclusive either, or, not both) we have: "Both I certainly exist, and, either I know anything at all with certainty, or I do not." The two either-or conditions are linked both-and to the one conclusion. 
+Well worth the effort. All of the top-side propositions: both the two implications (conditionals) and the disjunction boil down to $(p+r)q = (p\lor r)\land q$. All of that rhetoric, perhaps necessary in a verbal presentation, can be interpreting as this words and phrases (and remembering we are using the exclusive either, or, not both): "It is true that both I certainly exist, and, either I know anything at all with certainty, or I do not." The two either-or conditions are linked both-and to the one conclusion. 
 
-Can we refute this argument, given its structure (always the maintained _hypothesis_: "if we believe this structure to be the horns of a dilemma, then we maintain this belief in all we do next with this structure.") Only by destroying the either-or conditions, or by denying the both-and linkage. Let's take the denial first. To deny the both-and linkage we would have to establish that any and all knowledge are incompatible with existence. And to do that we would have to deny the existence of a knower who can know either with or without certainty. And this is absurdly against common sense existential import. Someone is typing here! Now how can we possibly destroy the conditionals, the either "with" or "without" certitude. If we believe that nothing is certain, then the either-or statement is still true; similarly is at least one thing is certain, such as $1+1=0 $ in our binary arithmetic, and on our binary clock too. Thus refutation seems absurd again. We may indeed have arrived at a logical immutable truth! This is called a _tautology_, a meaning that is true in its structural self (in Greek, _auton_). The only way we can then refute this tautology is to present alternative structure.
+Can we refute this argument given its structure? We always have the maintained _hypothesis_: "if we believe this structure to be the horns of a dilemma, then we maintain this belief in all we do next with this structure." There are only, here, two routes to refutation:  destroy the either-or conditions, or deny the both-and linkage. Let's take the denial first. To deny the both-and linkage we would have to establish that any and all knowledge are incompatible with existence. And to do that we would have to deny the existence of a knower who can know either with or without certainty. And this is absurdly against common sense existential import. Someone is typing here! Now how can we possibly destroy the conditionals, the either "with" or "without" certitude. If we believe that nothing is certain, then the either-or statement is still true; similarly is at least one thing is certain, such as $1+1=0 $ in our binary arithmetic, and on our binary clock too. Thus refutation seems absurd again. We may indeed have arrived at a logical immutable truth! This is called a _tautology_, a meaning that is true in its structural self (in Greek, _auton_). The only way we can then refute this tautology is to present alternative structure.
 
-## Ride with Socrates
+### Ride with Socrates
 
-We have three strategies with every dilemma: ride the horns (and risk getting gored), go between the horns (and risk getting thrown), and make another bovine to ride new horns (risk yet more horns, goring, and being thrown). On the upside, we have used logic to discover the logical consequences of our thinking. We will call all of this the intellectual process of _reasoning_ goaded on by our incessant, undying (always a spark exists) drive to know all that there is (Being, that is), and we will maintain the practical circumstance of limited time and space, so that it is process, not perfection. We will use our process of reasoning to judge whether something is or is not. And we recall that probability, or any other qualifier such as, might, could, should, would, and so on, Can be part of any proposition
-
-## Just Suppose
+We have three strategies with every dilemma: ride the horns (and risk getting gored), go between the horns (and risk getting thrown), and make another bovine to ride new horns (risk yet more horns, goring, and being thrown). On the upside, we have used logic to discover the logical consequences of our thinking. We will call all of this the intellectual process of _reasoning_ goaded on by our incessant, undying (always a spark exists) drive to know all that there is (Being, that is), and we will maintain the practical circumstance of limited time and space, so that it is process, not perfection. We will use our process of reasoning to judge whether something is or is not. And we recall that probability, or any other qualifier such as, might, could, should, would, and so on, can be part of any proposition.
 
 We can suppose, for a minute or so, that there are three propositions A, B, and C. They have context in particular situations, for example, in decision making. In this context, we might suppose that A is the proposition "developers make reasonably successful decisions". We also suppose that B is the proposition "product management makes reasonably successful decisions." And now we put proposition C into context as "Teams use data and experience consistent with prevailing recommended practices". Other than observations made by teams ad something that neither the development manager nor the product management manager might yet any specific idea about, but does have at the very least an intuitive feel about something which has yet to be revealed. Of course, we need at some point to define a bit more precisely what is meant by "reasonably successful" and "consistent with prevailing recommended practices" all for another time and deep conversation.
 
@@ -532,6 +536,88 @@ D &= (1+H+DH)H + (1+(1+H)+(1+H)D)(1+H) \\
 $$
 
 We have a match. We have only now logically justified Bayes Rule. It would appear deductions can provide us with new knowledge and insights into our decisions and the data which consistently will help us guide our actions. We also have an alternative to the potentially misleading use of Null Hypothesis Significance testing.
+
+## Ever satisfied?
+
+We can use Gaussian elimination manipulations of matrix rows to deduce what an invertible logical expression implies. This is a process called logical satisfaction.
+
+\begin{verbatim}
+Given formula logical expression
+
+(a + c + d)(b + (1+c) + d)(a + b + (1+d))(a + (1+b) + (1+c))
+
+("1" means TRUE, "0" means FALSE)
+Each clause leads to one equation.
+a	+	c	+	d	= 1
+b	+	(1+c)	+	d	= 1
+a	+	b	 + (1+d	)= 1
+a	+ (1+b)	+ (1+c) = 1
+
+This next equation would contradict the last equation above.
+
+(1+a)	+	b	 + c = 1 [Contradictory Clause]
+
+Since 1+1 = 1-1 = 0 for the Boolean ring, we have
+
+a	+	c	+	d	= 1
+b	+	c	+	d	= 0
+a	+	b	+ d = 0
+a	+ b	+ c = 1
+
+a	b	c	d		line
+ 
+1	0	1	1	1	A
+0	1	1	1	0	B
+1	1	0	1	0	C
+1	1	1	0	1	D
+
+a	b	c	d		operation
+ 
+1	0	1	1	1	A
+1	1	0	1	0	C
+1	1	1	0	1	D
+0	1	1	1	0	B (swapped)
+ 
+1	0	1	1	1	A
+0	1	1	0	1	E = C+A
+0	1	0	1	0	F = D+A
+0	1	1	1	0	B
+ 
+1	0	1	1	1	A
+0	1	1	0	1	E
+0	0	1	1	1	G = F+E
+0	0	0	1	1	H = B+E
+
+a	b	c	d		operation
+ 
+1	0	1	0	0	I = A+H
+0	1	1	0	1	E
+0	0	1	0	0	J = G+H
+0	0	0	1	1	H
+ 
+1	0	0	0	0	K = I+J
+0	1	0	0	1	L = E+J
+0	0	1	0	0	J
+0	0	0	1	1	H
+
+Solution:
+
+If the Contradictory Clause is present:	Unsolvable
+
+Else:	
+
+a = 0 = FALSE
+b = 1 = TRUE
+c = 0 = FALSE
+d = 1 = TRUE
+As a consequence:
+
+R(a,c,d)R(b,(1+c),d)R(a,b,(1+d)R(a,(1+b),(1+c))R((1+c)a,b,c)
+is not 1-in-3-satisfiable,
+
+while (a + c + d)(b + (1+c) + d)(a + b + (1+d))(a + (1+b) + (1+c))
+is 3-satisfiable with a=c=FALSE and b=d=TRUE.
+\end{verbatim}
 
 
 ## How many ways?
